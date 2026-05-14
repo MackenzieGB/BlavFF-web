@@ -4,70 +4,27 @@ import { useTranslations } from '../../i18n/utils';
 
 const lang = 'en';
 const t = useTranslations(lang);
-
-const perks = [t.volunteer.perk1, t.volunteer.perk2, t.volunteer.perk3, t.volunteer.perk4, t.volunteer.perk5];
-const roles = [
-  { title: t.volunteer.roleSetup, desc: t.volunteer.roleSetupDesc, icon: '🔧' },
-  { title: t.volunteer.roleReg, desc: t.volunteer.roleRegDesc, icon: '🎫' },
-  { title: t.volunteer.roleWatcher, desc: t.volunteer.roleWatcherDesc, icon: '🐾' },
-  { title: t.volunteer.roleCleanup, desc: t.volunteer.roleCleanupDesc, icon: '🧹' },
-  { title: t.volunteer.roleInfo, desc: t.volunteer.roleInfoDesc, icon: 'ℹ️' },
-];
-const faqs = [
-  { q: t.volunteer.faq1, a: t.volunteer.faq1A },
-  { q: t.volunteer.faq2, a: t.volunteer.faq2A },
-];
 ---
 
 <BaseLayout title={t.volunteer.title} lang={lang}>
   <section class="section pt-24">
-    <div class="container mx-auto max-w-5xl">
+    <div class="container mx-auto max-w-4xl">
       <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.volunteer.title}</h1>
       <p class="text-xl text-cool-grey mb-12">{t.volunteer.subtitle}</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <div class="card">
-          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.volunteer.why}</h2>
-          <p class="text-cool-grey text-lg leading-relaxed mb-6">{t.volunteer.whyDesc}</p>
-          <h3 class="font-heading font-semibold text-charcoal mb-3">{t.volunteer.perks}</h3>
-          <ul class="space-y-2">
-            {perks.map((perk) => (
-              <li class="flex items-center gap-2 text-cool-grey">
-                <span class="text-icy-cyan">✓</span>
-                {perk}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div class="card bg-icy-cyan/10 border-2 border-icy-cyan">
-          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.volunteer.signup}</h2>
-          <p class="text-cool-grey text-lg leading-relaxed mb-4">{t.volunteer.signupDesc}</p>
-          <p class="text-cool-grey text-sm mb-4">{t.volunteer.timeCommitDesc}</p>
-          <a href="mailto:blavff@furosion.org?subject=Volunteer Signup" class="btn btn-primary">{t.volunteer.signupBtn}</a>
-        </div>
+      <div class="card mb-8">
+        <p class="text-cool-grey text-lg leading-relaxed">{t.volunteer.description}</p>
       </div>
 
-      <h2 class="text-2xl font-heading font-semibold text-charcoal mb-6">{t.volunteer.roles}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-        {roles.map((role) => (
-          <div class="card text-center">
-            <div class="text-3xl mb-3">{role.icon}</div>
-            <h3 class="font-heading font-semibold text-lg text-charcoal mb-2">{role.title}</h3>
-            <p class="text-cool-grey text-sm">{role.desc}</p>
-          </div>
-        ))}
-      </div>
-
-      <h2 class="text-2xl font-heading font-semibold text-charcoal mb-6">{t.volunteer.faq}</h2>
-      <div class="space-y-4">
-        {faqs.map((faq) => (
-          <details class="card group">
-            <summary class="cursor-pointer font-heading font-semibold text-charcoal group-hover:text-icy-cyan transition-colors">{faq.q}</summary>
-            <p class="text-cool-grey mt-2">{faq.a}</p>
-          </details>
-        ))}
+      <div class="card bg-icy-cyan/10 border-2 border-icy-cyan">
+        <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.volunteer.signupBtn}</h2>
+        <p class="text-cool-grey text-lg leading-relaxed mb-6">{t.volunteer.signupDesc}</p>
+        <button data-fillout-id="von2aiWAw7us" data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters data-fillout-popup-size="medium" class="btn btn-primary">
+          {t.volunteer.signupBtn}
+        </button>
       </div>
     </div>
   </section>
+
+  <script src="https://server.fillout.com/embed/v1/" is:inline></script>
 </BaseLayout>

@@ -28,14 +28,21 @@ const faqs = [
         </div>
 
         <div>
-          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.mission}</h2>
-          <p class="text-cool-grey text-lg leading-relaxed">{t.about.missionDesc}</p>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.whoFor}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.whoForDesc}</p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.history}</h2>
-          <p class="text-cool-grey text-lg leading-relaxed">{t.about.historyDesc}</p>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.organizer}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.organizerDesc}</p>
         </div>
+
+        <div>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.venue}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.venueDesc}</p>
+        </div>
+
+        <MascotCallout text={t.home.ageNote} variant="warning" />
 
         <div>
           <h2 class="text-2xl font-heading font-semibold text-charcoal mb-6">{t.about.faq}</h2>
@@ -49,8 +56,6 @@ const faqs = [
           </div>
         </div>
       </div>
-
-      <MascotCallout text={lang === 'sk' ? 'Stále máš otázky? Ozvi sa nám na sociálnych sieťach!' : 'Still have questions? Reach out on social media!'} variant="info" class="mt-8" />
     </div>
   </section>
 </BaseLayout>

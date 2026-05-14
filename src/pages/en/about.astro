@@ -1,9 +1,18 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import MascotCallout from '../../components/MascotCallout.astro';
 import { useTranslations } from '../../i18n/utils';
 
-const lang = 'sk';
+const lang = 'en';
 const t = useTranslations(lang);
+
+const faqs = [
+  { q: t.about.faqAge, a: t.about.faqAgeA },
+  { q: t.about.faqFursuit, a: t.about.faqFursuitA },
+  { q: t.about.faqTickets, a: t.about.faqTicketsA },
+  { q: t.about.faqPhoto, a: t.about.faqPhotoA },
+  { q: t.about.faqAccess, a: t.about.faqAccessA },
+];
 ---
 
 <BaseLayout title={t.about.title} lang={lang}>
@@ -19,25 +28,26 @@ const t = useTranslations(lang);
         </div>
 
         <div>
-          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.mission}</h2>
-          <p class="text-cool-grey text-lg leading-relaxed">{t.about.missionDesc}</p>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.whoFor}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.whoForDesc}</p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.history}</h2>
-          <p class="text-cool-grey text-lg leading-relaxed">{t.about.historyDesc}</p>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.organizer}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.organizerDesc}</p>
         </div>
+
+        <div>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.venue}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.venueDesc}</p>
+        </div>
+
+        <MascotCallout text={t.home.ageNote} variant="warning" />
 
         <div>
           <h2 class="text-2xl font-heading font-semibold text-charcoal mb-6">{t.about.faq}</h2>
           <div class="space-y-4">
-            {[
-              { q: t.about.faqAge, a: t.about.faqAgeA },
-              { q: t.about.faqFursuit, a: t.about.faqFursuitA },
-              { q: t.about.faqTickets, a: t.about.faqTicketsA },
-              { q: t.about.faqPhoto, a: t.about.faqPhotoA },
-              { q: t.about.faqAccess, a: t.about.faqAccessA },
-            ].map((faq) => (
+            {faqs.map((faq) => (
               <details class="card group">
                 <summary class="cursor-pointer font-heading font-semibold text-charcoal group-hover:text-icy-cyan transition-colors">{faq.q}</summary>
                 <p class="text-cool-grey mt-2">{faq.a}</p>

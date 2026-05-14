@@ -16,7 +16,6 @@ const t = useTranslations(lang);
       <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.register.title}</h1>
       <p class="text-xl text-cool-grey mb-12">{t.register.subtitle}</p>
 
-      <!-- Ticket Types -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
         <div class="card border-2 border-pale-circle">
           <div class="text-3xl mb-4">🎫</div>
@@ -36,10 +35,8 @@ const t = useTranslations(lang);
         </div>
       </div>
 
-      <!-- Age Note -->
       <MascotCallout text={t.home.ageNote} variant="warning" class="mb-8" />
 
-      <!-- ToS Gate -->
       <div class="card bg-pale-circle-light/50 mb-8">
         <label class="flex items-start gap-3 cursor-pointer">
           <input type="checkbox" id="tos-agree" class="mt-1 w-5 h-5 rounded border-cool-grey text-icy-cyan focus:ring-icy-cyan" />
@@ -54,8 +51,7 @@ const t = useTranslations(lang);
         </label>
       </div>
 
-      <!-- Pretix Widget -->
-      <div class="card">
+      <div class="card mb-8" id="pretix-container">
         <h2 class="font-heading font-semibold text-xl text-charcoal mb-4">{t.register.widgetTitle}</h2>
         <pretix-widget event="https://tickets.furosion.com/furosion/blavff/"></pretix-widget>
         <noscript>
@@ -70,19 +66,19 @@ const t = useTranslations(lang);
   </section>
 </BaseLayout>
 
-<script is:inline>
+<script>
   const tosCheckbox = document.getElementById('tos-agree');
   const ageCheckbox = document.getElementById('age-confirm');
-  const pretixWidget = document.querySelector('pretix-widget');
+  const pretixContainer = document.getElementById('pretix-container');
 
   function updateWidget() {
-    if (pretixWidget) {
-      if (tosCheckbox.checked && ageCheckbox.checked) {
-        pretixWidget.style.opacity = '1';
-        pretixWidget.style.pointerEvents = 'auto';
+    if (pretixContainer) {
+      if (tosCheckbox?.checked && ageCheckbox?.checked) {
+        pretixContainer.style.opacity = '1';
+        pretixContainer.style.pointerEvents = 'auto';
       } else {
-        pretixWidget.style.opacity = '0.4';
-        pretixWidget.style.pointerEvents = 'none';
+        pretixContainer.style.opacity = '0.5';
+        pretixContainer.style.pointerEvents = 'none';
       }
     }
   }

@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+
+const examples = [
+  t.prednasky.example1,
+  t.prednasky.example2,
+  t.prednasky.example3,
+  t.prednasky.example4,
+  t.prednasky.example5,
+];
+---
+
+<BaseLayout title={t.prednasky.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.prednasky.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.prednasky.subtitle}</p>
+
+      <div class="card mb-8">
+        <p class="text-cool-grey text-lg leading-relaxed">{t.prednasky.description}</p>
+      </div>
+
+      <div class="card bg-icy-cyan/10 border-2 border-icy-cyan mb-8">
+        <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.prednasky.examples}</h2>
+        <ul class="space-y-2">
+          {examples.map((example) => (
+            <li class="flex items-center gap-3 text-cool-grey">
+              <span class="text-icy-cyan">•</span>
+              {example}
+            </li>
+          ))}
+        </ul>
+        <div class="mt-6">
+          <button data-fillout-id="4hpwcoJXxAus" data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters data-fillout-popup-size="medium" class="btn btn-primary">
+            {t.prednasky.applyBtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://server.fillout.com/embed/v1/" is:inline></script>
+</BaseLayout>

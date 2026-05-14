@@ -20,6 +20,11 @@ const t = useTranslations(lang);
             <p class="text-cool-grey mt-2">{t.venue.hoursValue}</p>
           </div>
 
+          <div class="card mb-6 bg-warm-brown/10 border-2 border-warm-brown">
+            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.venue.accessibility}</h2>
+            <p class="text-cool-grey">{t.venue.accessibilityDesc}</p>
+          </div>
+
           <div class="card">
             <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.venue.directions}</h2>
             <div class="space-y-4">
@@ -40,11 +45,6 @@ const t = useTranslations(lang);
                 <p class="text-cool-grey">{t.venue.airportDesc}</p>
               </div>
             </div>
-          </div>
-
-          <div class="card mt-6">
-            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.venue.accessibility}</h2>
-            <p class="text-cool-grey">{t.venue.accessibilityDesc}</p>
           </div>
 
           <a href="https://www.google.com/maps/dir/?api=1&destination=Youth+Hub+Bratislava+Stefanikova+39&travelmode=transit" target="_blank" rel="noopener" class="btn btn-primary mt-6 w-full justify-center">

@@ -2,16 +2,11 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Countdown from '../components/Countdown.astro';
 import MascotCallout from '../components/MascotCallout.astro';
-import PartnerGrid from '../components/PartnerGrid.astro';
 import { useTranslations } from '../i18n/utils';
 import logo from '../assets/logonobg.png';
 
 const lang = 'sk';
 const t = useTranslations(lang);
-
-const partners = [
-  { name: 'Youth Hub', logo: '/partners/youth-hub.png', url: 'https://www.youthhub.sk/' },
-];
 
 const highlights = [
   { icon: '📅', title: t.home.highlightsSchedule, desc: t.home.highlightsScheduleDesc, href: '/schedule' },
@@ -55,7 +50,6 @@ const highlights = [
   <section class="section bg-pale-circle-light/30">
     <div class="container mx-auto text-center">
       <h2 class="section-title">{t.home.highlights}</h2>
-      <p class="section-subtitle">{t.home.highlightsScheduleDesc}</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
         {highlights.map((h) => (
           <a href={h.href} class="card text-center group">
@@ -72,8 +66,16 @@ const highlights = [
   <section class="section bg-surface">
     <div class="container mx-auto text-center">
       <h2 class="section-title">{t.home.partnersTitle}</h2>
-      <div class="max-w-2xl mx-auto mt-6">
-        <PartnerGrid partners={partners} />
+      <div class="max-w-md mx-auto mt-6">
+        <a href="https://www.instagram.com/bratislavska_platforma_mladych/" target="_blank" rel="noopener" class="card flex items-center gap-4 group hover:border-icy-cyan transition-colors">
+          <div class="w-16 h-16 rounded-xl bg-pale-circle flex items-center justify-center flex-shrink-0">
+            <span class="text-2xl font-heading font-bold text-icy-cyan">Y</span>
+          </div>
+          <div class="text-left">
+            <h3 class="font-heading font-semibold text-lg text-charcoal group-hover:text-icy-cyan transition-colors">Youth Hub</h3>
+            <p class="text-cool-grey text-sm">Bratislavská platforma mladých</p>
+          </div>
+        </a>
       </div>
       <a href="/partners" class="btn btn-secondary mt-6">{t.home.partnersViewAll}</a>
     </div>

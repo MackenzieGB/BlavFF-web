@@ -22,20 +22,12 @@ const sections = [
       <p class="text-xl text-cool-grey mb-4">{t.privacy.subtitle}</p>
       <p class="text-cool-grey text-lg leading-relaxed mb-12">{t.privacy.intro}</p>
 
-      <div class="space-y-8">
-        {sections.map((section) => (
-          <div class="card">
-            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{section.title}</h2>
-            <p class="text-cool-grey text-lg leading-relaxed">{section.content}</p>
-          </div>
-        ))}
-      </div>
-
-      <div class="mt-12 p-6 bg-pale-circle-light rounded-xl border border-pale-circle">
-        <p class="text-cool-grey text-sm">
-          Tento dokument je v súlade s Nariadením EÚ 2016/679 (GDPR). Obsah bude doplnený organizátorom.
-        </p>
-      </div>
+      {sections.map((section) => (
+        <div class="card mb-6">
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{section.title}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{section.content}</p>
+        </div>
+      ))}
     </div>
   </section>
 </BaseLayout>
