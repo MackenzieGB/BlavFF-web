@@ -3,7 +3,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://blavff.sk',
-  base: '/BlavFF-web',
   trailingSlash: 'always',
   i18n: {
     defaultLocale: 'sk',
