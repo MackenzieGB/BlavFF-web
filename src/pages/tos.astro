@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'sk';
+const t = useTranslations(lang);
+
+const sections = [
+  { title: t.tos.intro, content: null },
+  { title: t.tos.eligibility, content: t.tos.eligibilityDesc },
+  { title: t.tos.behavior, content: t.tos.behaviorDesc },
+  { title: t.tos.tickets, content: t.tos.ticketsDesc },
+  { title: t.tos.liability, content: t.tos.liabilityDesc },
+  { title: t.tos.photos, content: t.tos.photosDesc },
+  { title: t.tos.changes, content: t.tos.changesDesc },
+];
+---
+
+<BaseLayout title={t.tos.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.tos.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.tos.subtitle}</p>
+
+      <div class="prose prose-lg max-w-none">
+        <p class="text-cool-grey text-lg leading-relaxed mb-8">{t.tos.intro}</p>
+
+        {sections.filter(s => s.content).map((section) => (
+          <div class="mb-8">
+            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{section.title}</h2>
+            <p class="text-cool-grey text-lg leading-relaxed">{section.content}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 p-6 bg-pale-circle-light rounded-xl border border-pale-circle">
+        <p class="text-cool-grey text-sm">
+          {lang === 'sk'
+            ? 'Tento dokument je šablóna. Obsah bude doplnený organizátorom pred začatím podujatia.'
+            : 'This document is a template. Content will be filled in by the organizer before the event.'}
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

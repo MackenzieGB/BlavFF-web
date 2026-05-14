@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PersonCard from '../components/PersonCard.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'sk';
+const t = useTranslations(lang);
+
+const guests = [];
+---
+
+<BaseLayout title={t.guests.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-5xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.guests.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.guests.subtitle}</p>
+
+      {guests.length > 0 ? (
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {guests.map((guest) => (
+            <PersonCard person={guest} />
+          ))}
+        </div>
+      ) : (
+        <div class="card text-center py-12">
+          <p class="text-cool-grey text-lg">{t.guests.noGuests}</p>
+        </div>
+      )}
+
+      <div class="card bg-warm-brown/10 border-2 border-warm-brown mt-12 text-center">
+        <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.guests.wantToPresent}</h2>
+        <p class="text-cool-grey text-lg mb-6">{t.guests.wantToPresentDesc}</p>
+        <a href="mailto:blavff@furosion.org" class="btn btn-warm">{t.guests.contactUs}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  text: string;
+  variant?: 'default' | 'warning' | 'info';
+}
+
+const { text, variant = 'default' } = Astro.props;
+
+const variants = {
+  default: 'border-icy-cyan bg-pale-circle-light',
+  warning: 'border-warm-brown bg-orange-50',
+  info: 'border-muted-blue bg-pale-circle-light',
+};
+---
+
+<div class={`mascot-callout ${variants[variant]}`}>
+  <img src="/logonobg.png" alt="" class="w-12 h-12 flex-shrink-0" />
+  <p class="text-charcoal font-accent text-lg">{text}</p>
+</div>

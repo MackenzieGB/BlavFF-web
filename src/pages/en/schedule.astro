@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ScheduleTable from '../../components/ScheduleTable.astro';
+import MascotCallout from '../../components/MascotCallout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+
+const scheduleItems = [
+  { time: '10:00', title: t.schedule.placeholder1, description: t.schedule.placeholder1Desc, location: 'Main Hall' },
+  { time: '10:30', title: t.schedule.placeholder2, description: t.schedule.placeholder2Desc, location: 'Panel Room' },
+  { time: '11:30', title: t.schedule.placeholder3, description: t.schedule.placeholder3Desc, location: 'Workshop Room' },
+  { time: '12:30', title: t.schedule.placeholder4, description: t.schedule.placeholder4Desc, location: '—' },
+  { time: '14:00', title: t.schedule.placeholder5, description: t.schedule.placeholder5Desc, location: 'Main Hall' },
+  { time: '15:30', title: t.schedule.placeholder6, description: t.schedule.placeholder6Desc, location: 'Panel Room' },
+  { time: '16:30', title: t.schedule.placeholder7, description: t.schedule.placeholder7Desc, location: 'Main Hall' },
+  { time: '18:00', title: t.schedule.placeholder8, description: t.schedule.placeholder8Desc, location: 'Main Hall' },
+  { time: '19:00', title: t.schedule.placeholder9, description: t.schedule.placeholder9Desc, location: 'Main Hall' },
+];
+---
+
+<BaseLayout title={t.schedule.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-5xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.schedule.title}</h1>
+      <p class="text-xl text-cool-grey mb-4">{t.schedule.subtitle}</p>
+      <MascotCallout text={t.schedule.note} variant="info" class="mb-8" />
+
+      <ScheduleTable items={scheduleItems} lang={lang} />
+    </div>
+  </section>
+</BaseLayout>

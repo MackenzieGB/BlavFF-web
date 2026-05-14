@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Countdown from '../../components/Countdown.astro';
+import MascotCallout from '../../components/MascotCallout.astro';
+import PartnerGrid from '../../components/PartnerGrid.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+
+const partners = [
+  { name: 'Youth Hub', logo: '/partners/youth-hub.png', url: 'https://www.youthhub.sk/' },
+];
+
+const highlights = [
+  { icon: '📅', title: t.home.highlightsSchedule, desc: t.home.highlightsScheduleDesc, href: '/en/schedule' },
+  { icon: '🎨', title: t.home.highlightsArtists, desc: t.home.highlightsArtistsDesc, href: '/en/artist-alley' },
+  { icon: '🐾', title: t.home.highlightsCommunity, desc: t.home.highlightsCommunityDesc, href: '/en/guests' },
+  { icon: '🤝', title: t.home.highlightsVolunteer, desc: t.home.highlightsVolunteerDesc, href: '/en/volunteer' },
+];
+---
+
+<BaseLayout title="BlavFF — Bratislava FluffFest 2026" lang={lang}>
+  <section class="min-h-screen flex items-center justify-center bg-split relative overflow-hidden pt-16">
+    <div class="absolute inset-0 bg-charcoal/60"></div>
+    <div class="container mx-auto px-4 relative z-10 text-center">
+      <img src="/logonobg.png" alt="BlavFF Mascot" class="w-40 h-40 md:w-56 md:h-56 mx-auto mb-8 animate-float drop-shadow-lg" />
+      <h1 class="text-5xl md:text-7xl font-heading font-bold text-surface mb-4">
+        Bratislava <span class="text-icy-cyan">FluffFest</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-cool-grey-light mb-2">{t.hero.tagline}</p>
+      <p class="text-lg text-muted-blue mb-8">{t.hero.date} • {t.hero.time} • {t.hero.venue}</p>
+
+      <Countdown lang={lang} />
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <a href="/en/register" class="btn btn-primary text-lg px-8 py-3">{t.hero.ctaRegister}</a>
+        <a href="/en/about" class="btn btn-secondary text-lg px-8 py-3">{t.hero.ctaLearn}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-surface">
+    <div class="container mx-auto text-center max-w-3xl">
+      <h2 class="section-title">{t.home.whatIs}</h2>
+      <p class="text-lg text-cool-grey mb-6">{t.home.whatIsDesc}</p>
+      <MascotCallout text={t.home.ageNote} variant="info" />
+    </div>
+  </section>
+
+  <section class="section bg-pale-circle-light/30">
+    <div class="container mx-auto text-center">
+      <h2 class="section-title">{t.home.highlights}</h2>
+      <p class="section-subtitle">{t.home.highlightsScheduleDesc}</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+        {highlights.map((h) => (
+          <a href={h.href} class="card text-center group">
+            <div class="text-4xl mb-4">{h.icon}</div>
+            <h3 class="font-heading font-semibold text-lg text-charcoal mb-2 group-hover:text-icy-cyan transition-colors">{h.title}</h3>
+            <p class="text-cool-grey text-sm">{h.desc}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-surface">
+    <div class="container mx-auto text-center">
+      <h2 class="section-title">{t.home.partnersTitle}</h2>
+      <div class="max-w-2xl mx-auto mt-6">
+        <PartnerGrid partners={partners} />
+      </div>
+      <a href="/en/partners" class="btn btn-secondary mt-6">{t.home.partnersViewAll}</a>
+    </div>
+  </section>
+
+  <section class="section bg-charcoal text-surface text-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Join Us!</h2>
+      <p class="text-cool-grey-light text-lg mb-6 max-w-xl mx-auto">August 3, 2026, Youth Hub, Bratislava. Don't miss it.</p>
+      <a href="/en/register" class="btn btn-primary text-lg px-8 py-3">{t.hero.ctaRegister}</a>
+    </div>
+  </section>
+</BaseLayout>

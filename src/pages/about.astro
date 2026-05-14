@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MascotCallout from '../components/MascotCallout.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'sk';
+const t = useTranslations(lang);
+
+const faqs = [
+  { q: t.about.faqAge, a: t.about.faqAgeA },
+  { q: t.about.faqFursuit, a: t.about.faqFursuitA },
+  { q: t.about.faqTickets, a: t.about.faqTicketsA },
+  { q: t.about.faqPhoto, a: t.about.faqPhotoA },
+  { q: t.about.faqAccess, a: t.about.faqAccessA },
+];
+---
+
+<BaseLayout title={t.about.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.about.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.about.subtitle}</p>
+
+      <div class="space-y-12">
+        <div>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.whatIs}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.whatIsDesc}</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.mission}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.missionDesc}</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.about.history}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.about.historyDesc}</p>
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-6">{t.about.faq}</h2>
+          <div class="space-y-4">
+            {faqs.map((faq) => (
+              <details class="card group">
+                <summary class="cursor-pointer font-heading font-semibold text-charcoal group-hover:text-icy-cyan transition-colors">{faq.q}</summary>
+                <p class="text-cool-grey mt-2">{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <MascotCallout text={lang === 'sk' ? 'Stále máš otázky? Ozvi sa nám na sociálnych sieťach!' : 'Still have questions? Reach out on social media!'} variant="info" class="mt-8" />
+    </div>
+  </section>
+</BaseLayout>

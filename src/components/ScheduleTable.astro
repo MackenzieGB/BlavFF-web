@@ -1,0 +1,40 @@
+---
+interface ScheduleItem {
+  time: string;
+  title: string;
+  description: string;
+  location: string;
+}
+
+interface Props {
+  items: ScheduleItem[];
+  lang: string;
+}
+
+const { items, lang } = Astro.props;
+const isSk = lang === 'sk';
+---
+
+<div class="overflow-x-auto">
+  <table class="w-full">
+    <thead>
+      <tr class="border-b-2 border-icy-cyan">
+        <th class="text-left py-3 px-4 font-heading font-semibold text-charcoal">{isSk ? 'Čas' : 'Time'}</th>
+        <th class="text-left py-3 px-4 font-heading font-semibold text-charcoal">{isSk ? 'Podujatie' : 'Event'}</th>
+        <th class="text-left py-3 px-4 font-heading font-semibold text-charcoal">{isSk ? 'Miestnosť' : 'Room'}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {items.map((item, i) => (
+        <tr class={`border-b border-pale-circle ${i % 2 === 0 ? 'bg-white' : 'bg-pale-circle-light/30'} hover:bg-icy-cyan/10 transition-colors`}>
+          <td class="py-3 px-4 font-mono text-cool-grey whitespace-nowrap">{item.time}</td>
+          <td class="py-3 px-4">
+            <p class="font-heading font-semibold text-charcoal">{item.title}</p>
+            <p class="text-sm text-cool-grey">{item.description}</p>
+          </td>
+          <td class="py-3 px-4 text-cool-grey">{item.location}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

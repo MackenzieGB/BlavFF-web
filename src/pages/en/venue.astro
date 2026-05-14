@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+---
+
+<BaseLayout title={t.venue.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-5xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.venue.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.venue.subtitle}</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div>
+          <div class="card mb-6">
+            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.venue.address}</h2>
+            <p class="text-cool-grey text-lg">{t.venue.addressValue}</p>
+            <p class="text-cool-grey mt-2">{t.venue.hoursValue}</p>
+          </div>
+
+          <div class="card">
+            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.venue.directions}</h2>
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-heading font-semibold text-charcoal">{t.venue.publicTransport}</h3>
+                <p class="text-cool-grey">{t.venue.publicTransportDesc}</p>
+              </div>
+              <div>
+                <h3 class="font-heading font-semibold text-charcoal">{t.venue.car}</h3>
+                <p class="text-cool-grey">{t.venue.carDesc}</p>
+              </div>
+              <div>
+                <h3 class="font-heading font-semibold text-charcoal">{t.venue.train}</h3>
+                <p class="text-cool-grey">{t.venue.trainDesc}</p>
+              </div>
+              <div>
+                <h3 class="font-heading font-semibold text-charcoal">{t.venue.airport}</h3>
+                <p class="text-cool-grey">{t.venue.airportDesc}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-6">
+            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.venue.accessibility}</h2>
+            <p class="text-cool-grey">{t.venue.accessibilityDesc}</p>
+          </div>
+
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Youth+Hub+Bratislava+Stefanikova+39&travelmode=transit" target="_blank" rel="noopener" class="btn btn-primary mt-6 w-full justify-center">
+            {t.venue.getDirections}
+          </a>
+        </div>
+
+        <div class="rounded-xl overflow-hidden shadow-medium h-full min-h-[400px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193.4368576417502!2d17.106017733602837!3d48.153422792697654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c890003de21c1%3A0xf6205519fdc9de63!2sYouth%20Hub%20(Bratislavsk%C3%A1%20Platforma%20Mlad%C3%BDch)!5e1!3m2!1sen!2ssk!4v1778775739767!5m2!1sen!2ssk"
+            width="100%"
+            height="100%"
+            style="border:0; min-height: 400px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="rounded-xl"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

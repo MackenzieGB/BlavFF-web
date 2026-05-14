@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'sk';
+const t = useTranslations(lang);
+
+const sections = [
+  { title: t.privacy.controller, content: t.privacy.controllerDesc },
+  { title: t.privacy.dataCollected, content: t.privacy.dataCollectedDesc },
+  { title: t.privacy.purpose, content: t.privacy.purposeDesc },
+  { title: t.privacy.retention, content: t.privacy.retentionDesc },
+  { title: t.privacy.rights, content: t.privacy.rightsDesc },
+  { title: t.privacy.contact, content: t.privacy.contactDesc },
+];
+---
+
+<BaseLayout title={t.privacy.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.privacy.title}</h1>
+      <p class="text-xl text-cool-grey mb-4">{t.privacy.subtitle}</p>
+      <p class="text-cool-grey text-lg leading-relaxed mb-12">{t.privacy.intro}</p>
+
+      <div class="space-y-8">
+        {sections.map((section) => (
+          <div class="card">
+            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{section.title}</h2>
+            <p class="text-cool-grey text-lg leading-relaxed">{section.content}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 p-6 bg-pale-circle-light rounded-xl border border-pale-circle">
+        <p class="text-cool-grey text-sm">
+          Tento dokument je v súlade s Nariadením EÚ 2016/679 (GDPR). Obsah bude doplnený organizátorom.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

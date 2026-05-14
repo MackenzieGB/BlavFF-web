@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PersonCard from '../../components/PersonCard.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+
+const artists = [];
+---
+
+<BaseLayout title={t.artistAlley.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-5xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.artistAlley.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.artistAlley.subtitle}</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="card">
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.artistAlley.whatIs}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed">{t.artistAlley.whatIsDesc}</p>
+        </div>
+
+        <div class="card bg-icy-cyan/10 border-2 border-icy-cyan">
+          <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.artistAlley.apply}</h2>
+          <p class="text-cool-grey text-lg leading-relaxed mb-4">{t.artistAlley.applyDesc}</p>
+          <p class="text-cool-grey text-sm mb-4">{t.artistAlley.tableInfoDesc}</p>
+          <a href="mailto:blavff@furosion.org" class="btn btn-primary">{t.artistAlley.applyBtn}</a>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-heading font-semibold text-charcoal mb-6">{t.artistAlley.attending}</h2>
+      {artists.length > 0 ? (
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {artists.map((artist) => (
+            <PersonCard person={artist} />
+          ))}
+        </div>
+      ) : (
+        <div class="card text-center py-12">
+          <p class="text-cool-grey text-lg">{t.artistAlley.noArtists}</p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PartnerGrid from '../../components/PartnerGrid.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+
+// ADD NEW PARTNERS HERE — just copy/paste a new object:
+// { name: 'Partner Name', logo: '/partners/partner-slug.png', url: 'https://...' },
+const partners = [
+  { name: 'Youth Hub', logo: '/partners/youth-hub.png', url: 'https://www.youthhub.sk/' },
+];
+---
+
+<BaseLayout title={t.partners.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-5xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.partners.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.partners.subtitle}</p>
+
+      <PartnerGrid partners={partners} />
+
+      <div class="card bg-warm-brown/10 border-2 border-warm-brown mt-12 text-center">
+        <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.partners.becomePartner}</h2>
+        <p class="text-cool-grey text-lg mb-6">{t.partners.becomePartnerDesc}</p>
+        <a href="mailto:blavff@furosion.org?subject=Partner Inquiry" class="btn btn-warm">{t.partners.contactUs}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

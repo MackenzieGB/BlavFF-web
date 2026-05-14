@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MascotCallout from '../components/MascotCallout.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'sk';
+const t = useTranslations(lang);
+
+const sections = [
+  { title: t.rules.codeOfConduct, content: t.rules.codeOfConductDesc },
+  { title: t.rules.conRules, content: t.rules.conRulesDesc },
+  { title: t.rules.fursuitRules, content: t.rules.fursuitRulesDesc },
+  { title: t.rules.agePolicy, content: t.rules.agePolicyDesc },
+  { title: t.rules.accessibility, content: t.rules.accessibilityDesc },
+  { title: t.rules.photoConsent, content: t.rules.photoConsentDesc },
+];
+---
+
+<BaseLayout title={t.rules.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.rules.title}</h1>
+      <p class="text-xl text-cool-grey mb-4">{t.rules.subtitle}</p>
+      <MascotCallout text={t.rules.mascotNote} variant="info" class="mb-12" />
+
+      <div class="space-y-8">
+        {sections.map((section) => (
+          <div class="card">
+            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{section.title}</h2>
+            <p class="text-cool-grey text-lg leading-relaxed">{section.content}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
