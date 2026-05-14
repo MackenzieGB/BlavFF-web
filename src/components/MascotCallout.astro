@@ -1,6 +1,4 @@
 ---
-import logo from '../assets/logonobg.png';
-
 interface Props {
   text: string;
   variant?: 'default' | 'warning' | 'info';
@@ -16,6 +14,6 @@ const variants = {
 ---
 
 <div class={`mascot-callout ${variants[variant]}`}>
-  <img src={logo.src} alt="" class="w-12 h-12 flex-shrink-0" />
+  <img src="/logonobg.png" alt="" class="w-12 h-12 flex-shrink-0" />
   <p class="text-charcoal font-accent text-lg">{text}</p>
 </div>

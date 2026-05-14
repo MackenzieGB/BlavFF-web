@@ -4,7 +4,6 @@ import Countdown from '../components/Countdown.astro';
 import MascotCallout from '../components/MascotCallout.astro';
 import PartnerGrid from '../components/PartnerGrid.astro';
 import { useTranslations } from '../i18n/utils';
-import logo from '../assets/logonobg.png';
 
 const lang = 'sk';
 const t = useTranslations(lang);
@@ -26,7 +25,7 @@ const highlights = [
   <section class="min-h-screen flex items-center justify-center bg-split relative overflow-hidden pt-16">
     <div class="absolute inset-0 bg-charcoal/60"></div>
     <div class="container mx-auto px-4 relative z-10 text-center">
-      <img src={logo.src} alt="BlavFF Mascot" class="w-40 h-40 md:w-56 md:h-56 mx-auto mb-8 animate-float drop-shadow-lg" />
+      <img src="/logonobg.png" alt="BlavFF Mascot" class="w-40 h-40 md:w-56 md:h-56 mx-auto mb-8 animate-float drop-shadow-lg" />
       <h1 class="text-5xl md:text-7xl font-heading font-bold text-surface mb-4">
         Bratislava <span class="text-icy-cyan">FluffFest</span>
       </h1>
