@@ -10,12 +10,13 @@ interface Props {
 }
 
 const { partners } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
   {partners.map((partner) => (
     <a href={partner.url} target="_blank" rel="noopener" class="partner-logo" aria-label={partner.name}>
-      <img src={partner.logo} alt={partner.name} loading="lazy" />
+      <img src={`${base}${partner.logo}`} alt={partner.name} loading="lazy" />
     </a>
   ))}
 </div>

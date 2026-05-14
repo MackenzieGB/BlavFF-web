@@ -1,5 +1,6 @@
 ---
 import { useTranslations } from '../i18n/utils';
+import logo from '../assets/logonobg.png';
 
 interface Props {
   lang: string;
@@ -14,7 +15,7 @@ const isSk = lang === 'sk';
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between h-16">
       <a href={isSk ? '/' : '/en/'} class="flex items-center gap-2">
-        <img src="/logonobg.png" alt="BlavFF Logo" class="h-10 w-auto" />
+        <img src={logo.src} alt="BlavFF Logo" class="h-10 w-auto" />
         <span class="font-heading font-bold text-xl text-charcoal">BlavFF</span>
       </a>
 
