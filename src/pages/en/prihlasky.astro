@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const lang = 'en';
+const t = useTranslations(lang);
+
+const applications = [
+  { title: t.prihlasky.artistAlley.title, desc: t.prihlasky.artistAlley.desc, btn: t.prihlasky.artistAlley.btn, filloutId: '4896Rg9V8jus', icon: '🎨' },
+  { title: t.prihlasky.volunteer.title, desc: t.prihlasky.volunteer.desc, btn: t.prihlasky.volunteer.btn, filloutId: 'von2aiWAw7us', icon: '🤝' },
+  { title: t.prihlasky.fursuitComp.title, desc: t.prihlasky.fursuitComp.desc, btn: t.prihlasky.fursuitComp.btn, filloutId: '', icon: '🏆' },
+  { title: t.prihlasky.artComp.title, desc: t.prihlasky.artComp.desc, btn: t.prihlasky.artComp.btn, filloutId: '', icon: '🖌️' },
+  { title: t.prihlasky.talks.title, desc: t.prihlasky.talks.desc, btn: t.prihlasky.talks.btn, filloutId: '4hpwcoJXxAus', icon: '🎤' },
+];
+---
+
+<BaseLayout title={t.prihlasky.title} lang={lang}>
+  <section class="section pt-24">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.prihlasky.title}</h1>
+      <p class="text-xl text-cool-grey mb-12">{t.prihlasky.subtitle}</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {applications.map((app) => (
+          <div class="card">
+            <div class="text-3xl mb-3">{app.icon}</div>
+            <h2 class="text-xl font-heading font-semibold text-charcoal mb-2">{app.title}</h2>
+            <p class="text-cool-grey text-sm mb-4">{app.desc}</p>
+            {app.filloutId ? (
+              <button data-fillout-id={app.filloutId} data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters data-fillout-popup-size="medium" class="btn btn-primary w-full justify-center">
+                {app.btn}
+              </button>
+            ) : (
+              <button class="btn btn-primary w-full justify-center opacity-60 cursor-not-allowed" disabled>
+                Coming Soon
+              </button>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script src="https://server.fillout.com/embed/v1/" is:inline></script>
+</BaseLayout>

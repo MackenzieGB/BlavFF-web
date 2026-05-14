@@ -11,7 +11,7 @@ const t = useTranslations(lang);
 const highlights = [
   { icon: '📅', title: t.home.highlightsSchedule, desc: t.home.highlightsScheduleDesc, href: '/schedule' },
   { icon: '🎨', title: t.home.highlightsArtists, desc: t.home.highlightsArtistsDesc, href: '/artist-alley' },
-  { icon: '🐾', title: t.home.highlightsCommunity, desc: t.home.highlightsCommunityDesc, href: '/guests' },
+  { icon: '🏆', title: t.home.highlightsCompetitions, desc: t.home.highlightsCompetitionsDesc, href: '/competitions' },
   { icon: '🤝', title: t.home.highlightsVolunteer, desc: t.home.highlightsVolunteerDesc, href: '/volunteer' },
 ];
 ---
@@ -50,7 +50,7 @@ const highlights = [
   <section class="section bg-pale-circle-light/30">
     <div class="container mx-auto text-center">
       <h2 class="section-title">{t.home.highlights}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
         {highlights.map((h) => (
           <a href={h.href} class="card text-center group">
             <div class="text-4xl mb-4">{h.icon}</div>
@@ -67,14 +67,8 @@ const highlights = [
     <div class="container mx-auto text-center">
       <h2 class="section-title">{t.home.partnersTitle}</h2>
       <div class="max-w-md mx-auto mt-6">
-        <a href="https://www.instagram.com/bratislavska_platforma_mladych/" target="_blank" rel="noopener" class="card flex items-center gap-4 group hover:border-icy-cyan transition-colors">
-          <div class="w-16 h-16 rounded-xl bg-pale-circle flex items-center justify-center flex-shrink-0">
-            <span class="text-2xl font-heading font-bold text-icy-cyan">Y</span>
-          </div>
-          <div class="text-left">
-            <h3 class="font-heading font-semibold text-lg text-charcoal group-hover:text-icy-cyan transition-colors">Youth Hub</h3>
-            <p class="text-cool-grey text-sm">Bratislavská platforma mladých</p>
-          </div>
+        <a href="https://www.youthhub.sk/" target="_blank" rel="noopener" class="partner-logo w-48 h-32 mx-auto">
+          <img src="/partners/youth-hub.png" alt="Youth Hub" loading="lazy" />
         </a>
       </div>
       <a href="/partners" class="btn btn-secondary mt-6">{t.home.partnersViewAll}</a>

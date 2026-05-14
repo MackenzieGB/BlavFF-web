@@ -16,15 +16,9 @@ const t = useTranslations(lang);
         <p class="text-cool-grey text-lg leading-relaxed">{t.volunteer.description}</p>
       </div>
 
-      <div class="card bg-icy-cyan/10 border-2 border-icy-cyan">
-        <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{t.volunteer.signupBtn}</h2>
-        <p class="text-cool-grey text-lg leading-relaxed mb-6">{t.volunteer.signupDesc}</p>
-        <button data-fillout-id="von2aiWAw7us" data-fillout-embed-type="popup" data-fillout-dynamic-resize data-fillout-inherit-parameters data-fillout-popup-size="medium" class="btn btn-primary">
-          {t.volunteer.signupBtn}
-        </button>
+      <div class="text-center">
+        <a href="/en/prihlasky" class="btn btn-primary text-lg px-8 py-3">{t.volunteer.signupBtn}</a>
       </div>
     </div>
   </section>
-
-  <script src="https://server.fillout.com/embed/v1/" is:inline></script>
 </BaseLayout>

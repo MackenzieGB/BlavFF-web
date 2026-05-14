@@ -19,15 +19,15 @@ const isSk = lang === 'sk';
         <span class="font-heading font-bold text-xl text-charcoal">BlavFF</span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6">
-        <a href={isSk ? '/about' : '/en/about'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.about}</a>
-        <a href={isSk ? '/schedule' : '/en/schedule'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.schedule}</a>
-        <a href={isSk ? '/prednasky' : '/en/prednasky'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.prednasky}</a>
-        <a href={isSk ? '/artist-alley' : '/en/artist-alley'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.artistAlley}</a>
-        <a href={isSk ? '/guests' : '/en/guests'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.guests}</a>
-        <a href={isSk ? '/volunteer' : '/en/volunteer'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.volunteer}</a>
-        <a href={isSk ? '/venue' : '/en/venue'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.venue}</a>
-        <a href={isSk ? '/partners' : '/en/partners'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium">{t.nav.partners}</a>
+      <nav class="hidden xl:flex items-center gap-5">
+        <a href={isSk ? '/about' : '/en/about'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.about}</a>
+        <a href={isSk ? '/schedule' : '/en/schedule'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.schedule}</a>
+        <a href={isSk ? '/prednasky' : '/en/prednasky'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.prednasky}</a>
+        <a href={isSk ? '/competitions' : '/en/competitions'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.competitions}</a>
+        <a href={isSk ? '/artist-alley' : '/en/artist-alley'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.artistAlley}</a>
+        <a href={isSk ? '/prihlasky' : '/en/prihlasky'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.prihlasky}</a>
+        <a href={isSk ? '/venue' : '/en/venue'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.venue}</a>
+        <a href={isSk ? '/partners' : '/en/partners'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium text-sm">{t.nav.partners}</a>
       </nav>
 
       <div class="flex items-center gap-3">
@@ -36,7 +36,7 @@ const isSk = lang === 'sk';
         </a>
         <a href={isSk ? '/register' : '/en/register'} class="btn btn-primary text-sm py-2 px-4">{t.nav.register}</a>
 
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-charcoal" aria-label="Menu">
+        <button id="mobile-menu-btn" class="xl:hidden p-2 text-charcoal" aria-label="Menu">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
@@ -45,16 +45,19 @@ const isSk = lang === 'sk';
     </div>
   </div>
 
-  <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-pale-circle">
-    <nav class="flex flex-col p-4 gap-3">
+  <div id="mobile-menu" class="hidden xl:hidden bg-surface border-t border-pale-circle">
+    <nav class="flex flex-col p-4 gap-2 max-h-[80vh] overflow-y-auto">
       <a href={isSk ? '/about' : '/en/about'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.about}</a>
       <a href={isSk ? '/schedule' : '/en/schedule'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.schedule}</a>
       <a href={isSk ? '/prednasky' : '/en/prednasky'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.prednasky}</a>
+      <a href={isSk ? '/competitions' : '/en/competitions'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.competitions}</a>
       <a href={isSk ? '/artist-alley' : '/en/artist-alley'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.artistAlley}</a>
+      <a href={isSk ? '/prihlasky' : '/en/prihlasky'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.prihlasky}</a>
       <a href={isSk ? '/guests' : '/en/guests'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.guests}</a>
       <a href={isSk ? '/volunteer' : '/en/volunteer'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.volunteer}</a>
       <a href={isSk ? '/venue' : '/en/venue'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.venue}</a>
       <a href={isSk ? '/partners' : '/en/partners'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.partners}</a>
+      <a href={isSk ? '/press-kit' : '/en/press-kit'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.pressKit}</a>
       <a href={isSk ? '/news' : '/en/news'} class="text-cool-grey hover:text-icy-cyan transition-colors font-medium py-2">{t.nav.news}</a>
       <a href={isSk ? '/register' : '/en/register'} class="btn btn-primary mt-2">{t.nav.register}</a>
     </nav>

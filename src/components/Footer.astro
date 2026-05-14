@@ -11,45 +11,51 @@ const isSk = lang === 'sk';
 ---
 
 <footer class="bg-charcoal text-surface">
-  <!-- Main footer content -->
-  <div class="container mx-auto px-4 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+  <div class="container mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
       <!-- Brand -->
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <img src="/logowb.png" alt="BlavFF Logo" class="h-14 w-auto" />
-          <div>
-            <span class="font-heading font-bold text-xl block">BlavFF</span>
-            <span class="text-cool-grey text-xs">{isSk ? 'Bratislava FluffFest' : 'Bratislava FluffFest'}</span>
-          </div>
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="font-heading font-bold text-2xl text-icy-cyan">BlavFF</span>
         </div>
-        <p class="text-cool-grey text-sm leading-relaxed">
+        <p class="text-cool-grey text-sm leading-relaxed mb-3">
           {isSk
-            ? 'Mini festival pre furry, therianov a cosplay komunitu. Organizované Furosion o.z.'
-            : 'Mini festival for the furry, therian, and cosplay community. Organized by Furosion o.z.'}
+            ? 'Mini festival pre furry, therianov a cosplay komunitu.'
+            : 'Mini festival for the furry, therian, and cosplay community.'}
+        </p>
+        <p class="text-cool-grey text-xs">
+          {isSk ? '3. 8. 2026 • Youth Hub, Bratislava' : 'August 3, 2026 • Youth Hub, Bratislava'}
         </p>
       </div>
 
       <!-- Quick links -->
       <div>
-        <h3 class="font-heading font-semibold mb-4 text-icy-cyan">{isSk ? 'Navigácia' : 'Navigation'}</h3>
-        <div class="grid grid-cols-2 gap-2 text-sm">
-          <a href={isSk ? '/about' : '/en/about'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.about}</a>
-          <a href={isSk ? '/schedule' : '/en/schedule'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.schedule}</a>
-          <a href={isSk ? '/register' : '/en/register'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.register}</a>
-          <a href={isSk ? '/rules' : '/en/rules'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.rules}</a>
-          <a href={isSk ? '/artist-alley' : '/en/artist-alley'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.artistAlley}</a>
-          <a href={isSk ? '/prednasky' : '/en/prednasky'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{isSk ? 'Prednášky' : 'Talks'}</a>
-          <a href={isSk ? '/guests' : '/en/guests'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.guests}</a>
-          <a href={isSk ? '/volunteer' : '/en/volunteer'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.volunteer}</a>
-          <a href={isSk ? '/venue' : '/en/venue'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.venue}</a>
-          <a href={isSk ? '/partners' : '/en/partners'} class="text-cool-grey-light hover:text-icy-cyan transition-colors py-1">{t.nav.partners}</a>
-        </div>
+        <h3 class="font-heading font-semibold mb-3 text-icy-cyan text-sm uppercase tracking-wider">{isSk ? 'Navigácia' : 'Navigation'}</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href={isSk ? '/about' : '/en/about'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.about}</a></li>
+          <li><a href={isSk ? '/schedule' : '/en/schedule'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.schedule}</a></li>
+          <li><a href={isSk ? '/prednasky' : '/en/prednasky'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{isSk ? 'Prednášky' : 'Talks'}</a></li>
+          <li><a href={isSk ? '/competitions' : '/en/competitions'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{isSk ? 'Súťaže' : 'Competitions'}</a></li>
+          <li><a href={isSk ? '/artist-alley' : '/en/artist-alley'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.artistAlley}</a></li>
+          <li><a href={isSk ? '/guests' : '/en/guests'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.guests}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold mb-3 text-icy-cyan text-sm uppercase tracking-wider">{isSk ? 'Zapoj sa' : 'Get Involved'}</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href={isSk ? '/register' : '/en/register'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.register}</a></li>
+          <li><a href={isSk ? '/prihlasky' : '/en/prihlasky'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{isSk ? 'Prihlášky' : 'Applications'}</a></li>
+          <li><a href={isSk ? '/volunteer' : '/en/volunteer'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.volunteer}</a></li>
+          <li><a href={isSk ? '/venue' : '/en/venue'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.venue}</a></li>
+          <li><a href={isSk ? '/partners' : '/en/partners'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.partners}</a></li>
+          <li><a href={isSk ? '/press-kit' : '/en/press-kit'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.nav.pressKit}</a></li>
+        </ul>
       </div>
 
       <!-- Social -->
       <div>
-        <h3 class="font-heading font-semibold mb-4 text-icy-cyan">{isSk ? 'Sleduj nás' : 'Follow Us'}</h3>
+        <h3 class="font-heading font-semibold mb-3 text-icy-cyan text-sm uppercase tracking-wider">{isSk ? 'Sleduj nás' : 'Follow Us'}</h3>
         <ul class="space-y-3 text-sm">
           <li>
             <a href="https://www.instagram.com/furosionorg" target="_blank" rel="noopener" class="text-cool-grey-light hover:text-icy-cyan transition-colors flex items-center gap-2">
@@ -69,17 +75,11 @@ const isSk = lang === 'sk';
               WhatsApp
             </a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/bratislavska_platforma_mladych/" target="_blank" rel="noopener" class="text-cool-grey-light hover:text-icy-cyan transition-colors flex items-center gap-2">
-              <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-              BPM (Youth Hub)
-            </a>
-          </li>
         </ul>
       </div>
     </div>
 
-    <!-- Legal links bar -->
+    <!-- Legal links -->
     <div class="border-t border-charcoal-light pt-6 flex flex-wrap justify-center gap-6 text-sm">
       <a href={isSk ? '/privacy' : '/en/privacy'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.footer.privacy}</a>
       <a href={isSk ? '/tos' : '/en/tos'} class="text-cool-grey-light hover:text-icy-cyan transition-colors">{t.footer.tos}</a>
@@ -88,23 +88,22 @@ const isSk = lang === 'sk';
   </div>
 
   <!-- Furosion attribution -->
-  <div class="border-t border-charcoal-light py-8">
+  <div class="border-t border-charcoal-light py-6">
     <div class="text-center">
-      <a href="https://furosion.org" target="_blank" rel="noopener" class="inline-block text-decoration-none no-underline">
-        <img src="https://furosion.org/furosionozsquare.png" alt="Furosion logo" class="w-[60px] h-[60px] block mx-auto mb-2 animate-float" />
-        <div class="text-cool-grey text-sm animate-fade">
-          {isSk ? 'Projekt organizácie Furosion o.z.' : 'A Furosion o.z. project'}
+      <a href="https://furosion.org" target="_blank" rel="noopener" class="inline-block no-underline group">
+        <div class="text-cool-grey text-sm group-hover:text-icy-cyan transition-colors">
+          {isSk ? 'Projekt organizácie' : 'A project of'} <span class="text-icy-cyan font-semibold">Furosion o.z.</span>
         </div>
       </a>
     </div>
   </div>
 
   <!-- Copyright bar -->
-  <div class="bg-charcoal-light/30 py-4">
+  <div class="bg-charcoal-light/20 py-3">
     <div class="container mx-auto px-4 text-center text-cool-grey text-xs">
       {isSk
-        ? '© 2026 BlavFF — Furosion o.z. Všetky práva vyhradené. | Tomášikova 45/A, Bratislava | IČO: 57528900'
-        : '© 2026 BlavFF — Furosion o.z. All rights reserved. | Tomášikova 45/A, Bratislava | IČO: 57528900'}
+        ? '© 2026 BlavFF — Furosion o.z. Všetky práva vyhradené. | IČO: 57528900'
+        : '© 2026 BlavFF — Furosion o.z. All rights reserved. | IČO: 57528900'}
     </div>
   </div>
 </footer>

@@ -7,12 +7,16 @@ const lang = 'en';
 const t = useTranslations(lang);
 
 const sections = [
-  { title: t.rules.codeOfConduct, content: t.rules.codeOfConductDesc },
-  { title: t.rules.conRules, content: t.rules.conRulesDesc },
-  { title: t.rules.fursuitRules, content: t.rules.fursuitRulesDesc },
-  { title: t.rules.agePolicy, content: t.rules.agePolicyDesc },
-  { title: t.rules.contentPolicy, content: t.rules.contentPolicyDesc },
-  { title: t.rules.photoConsent, content: t.rules.photoConsentDesc },
+  { title: t.rules.sections.general.title, items: t.rules.sections.general.items },
+  { title: t.rules.sections.safety.title, items: t.rules.sections.safety.items },
+  { title: t.rules.sections.minors.title, items: t.rules.sections.minors.items },
+  { title: t.rules.sections.photos.title, items: t.rules.sections.photos.items },
+  { title: t.rules.sections.costumes.title, items: t.rules.sections.costumes.items },
+  { title: t.rules.sections.substances.title, items: t.rules.sections.substances.items },
+  { title: t.rules.sections.artistAlley.title, items: t.rules.sections.artistAlley.items },
+  { title: t.rules.sections.hygiene.title, items: t.rules.sections.hygiene.items },
+  { title: t.rules.sections.online.title, items: t.rules.sections.online.items },
+  { title: t.rules.sections.final.title, items: t.rules.sections.final.items },
 ];
 ---
 
@@ -20,16 +24,34 @@ const sections = [
   <section class="section pt-24">
     <div class="container mx-auto max-w-4xl">
       <h1 class="text-4xl md:text-5xl font-heading font-bold text-charcoal mb-4">{t.rules.title}</h1>
-      <p class="text-xl text-cool-grey mb-4">{t.rules.subtitle}</p>
-      <MascotCallout text={t.rules.mascotNote} variant="info" class="mb-12" />
+      <p class="text-xl text-cool-grey mb-2">{t.rules.subtitle}</p>
+      <p class="text-cool-grey text-sm mb-4">{t.rules.lastUpdated}</p>
+      <MascotCallout text={t.rules.mascotNote} variant="info" class="mb-8" />
 
-      <div class="space-y-8">
-        {sections.map((section) => (
-          <div class="card">
-            <h2 class="text-2xl font-heading font-semibold text-charcoal mb-4">{section.title}</h2>
-            <p class="text-cool-grey text-lg leading-relaxed">{section.content}</p>
-          </div>
-        ))}
+      <div class="card mb-8">
+        <p class="text-cool-grey text-lg leading-relaxed">{t.rules.intro}</p>
+        <p class="text-cool-grey text-lg leading-relaxed mt-4">{t.rules.intro2}</p>
+      </div>
+
+      {sections.map((section) => (
+        <div class="card mb-6">
+          <h2 class="text-xl font-heading font-semibold text-charcoal mb-4">{section.title}</h2>
+          <ol class="space-y-3">
+            {section.items.map((item) => (
+              <li class="flex items-start gap-3 text-cool-grey">
+                <span class="text-icy-cyan font-bold mt-1 flex-shrink-0">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      ))}
+
+      <div class="card bg-pale-circle-light/50 text-center">
+        <h2 class="text-xl font-heading font-semibold text-charcoal mb-4">{t.rules.contact}</h2>
+        <p class="text-cool-grey">{t.rules.contactEmail}</p>
+        <p class="text-cool-grey">{t.rules.contactWeb}</p>
+        <p class="text-cool-grey">{t.rules.contactPhone}</p>
       </div>
     </div>
   </section>
