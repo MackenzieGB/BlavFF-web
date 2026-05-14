@@ -1,5 +1,6 @@
 ---
 import { useTranslations } from '../i18n/utils';
+import logoWb from '../assets/logowb.png';
 
 interface Props {
   lang: string;
@@ -15,7 +16,7 @@ const isSk = lang === 'sk';
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
       <div class="md:col-span-1">
         <div class="flex items-center gap-2 mb-4">
-          <img src="/logowb.png" alt="BlavFF Logo" class="h-12 w-auto" />
+          <img src={logoWb.src} alt="BlavFF Logo" class="h-12 w-auto" />
           <span class="font-heading font-bold text-xl">BlavFF</span>
         </div>
         <p class="text-cool-grey text-sm">Bratislava FluffFest 2026</p>
