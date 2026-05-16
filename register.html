@@ -265,13 +265,24 @@
                 <a href="privacy.html" class="text-icy-cyan hover:text-icy-cyan-dark underline">spracovaním osobných údajov</a>.
               </span>
             </label>
+            <label class="flex items-start gap-3 cursor-pointer mt-4">
+              <input
+                type="checkbox"
+                id="rules-agree"
+                class="mt-1 w-5 h-5 rounded border-cool-grey text-icy-cyan focus:ring-icy-cyan"
+              />
+              <span class="text-charcoal">
+                Súhlasím s
+                <a href="rules.html" class="text-icy-cyan hover:text-icy-cyan-dark underline">pravidlami podujatia</a>.
+              </span>
+            </label>
           </div>
           <div class="card mb-8 relative" id="pretix-wrapper">
             <!-- Blocking overlay -->
             <div id="pretix-overlay" class="absolute inset-0 rounded-lg z-10 flex flex-col items-center justify-center text-center p-6" style="background-color: #2d2d33f2;">
               <div class="text-4xl mb-3">🔒</div>
               <p class="font-heading font-semibold text-lg text-surface mb-2">Zaškrtni všetky súhlasy pre prístup k registrácii</p>
-              <p class="text-cool-grey-light text-sm">Musíš súhlasiť s podmienkami účasti, vekovým obmedzením a spracovaním údajov.</p>
+              <p class="text-cool-grey-light text-sm">Musíš súhlasiť s podmienkami účasti, vekovým obmedzením, spracovaním údajov a pravidlami podujatia.</p>
             </div>
             <h2 class="font-heading font-semibold text-xl text-charcoal mb-4">Kúp si lístok</h2>
             <pretix-widget event="https://tickets.furosion.com/furosion/blavff/"></pretix-widget>
@@ -291,11 +302,12 @@
           var tos = document.getElementById("tos-agree");
           var age = document.getElementById("age-confirm");
           var privacy = document.getElementById("privacy-agree");
+          var rules = document.getElementById("rules-agree");
           var overlay = document.getElementById("pretix-overlay");
 
           function checkAll() {
-            if (tos && age && privacy && overlay) {
-              if (tos.checked && age.checked && privacy.checked) {
+            if (tos && age && privacy && rules && overlay) {
+              if (tos.checked && age.checked && privacy.checked && rules.checked) {
                 overlay.style.display = "none";
               } else {
                 overlay.style.display = "flex";
@@ -306,6 +318,7 @@
           if (tos) tos.addEventListener("change", checkAll);
           if (age) age.addEventListener("change", checkAll);
           if (privacy) privacy.addEventListener("change", checkAll);
+          if (rules) rules.addEventListener("change", checkAll);
           checkAll();
         })();
       </script>
