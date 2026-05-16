@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Slovak (default) -->
+  <url>
+    <loc>https://blavff.sk/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blavff.sk/" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/about.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/schedule.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/schedule.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/schedule.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/prednasky.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/prednasky.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/prednasky.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/competitions.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/competitions.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/competitions.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/competition-rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/competition-rules.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/competition-rules.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/artist-alley.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/artist-alley.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/artist-alley.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/guests.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/guests.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/guests.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/volunteer.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/volunteer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/volunteer.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/register.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/register.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/register.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/venue.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/venue.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/venue.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/partners.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/partners.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/press-kit.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/press-kit.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/press-kit.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/news.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/news.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/rules.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/rules.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/tos.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/tos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/tos.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/privacy.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://blavff.sk/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blavff.sk/" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/about.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/schedule.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/schedule.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/schedule.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/prednasky.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/prednasky.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/prednasky.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/competitions.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/competitions.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/competitions.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/competition-rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/competition-rules.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/competition-rules.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/artist-alley.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/artist-alley.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/artist-alley.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/guests.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/guests.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/guests.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/volunteer.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/volunteer.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/volunteer.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/register.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/register.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/register.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/venue.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/venue.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/venue.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/partners.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/partners.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/partners.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/press-kit.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/press-kit.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/press-kit.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/news.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/news.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/rules.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/rules.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/tos.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/tos.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/tos.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://blavff.sk/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://blavff.sk/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://blavff.sk/en/privacy.html" />
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
