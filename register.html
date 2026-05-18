@@ -229,7 +229,7 @@
             <div class="card border-2 border-pale-circle">
               <div class="text-3xl mb-4">🎫</div>
               <h3 class="font-heading font-semibold text-xl text-charcoal mb-2">Free registrácia</h3>
-              <p class="text-cool-grey mb-4">Vstup na con, water badge, conbook, základné veci</p>
+              <p class="text-cool-grey mb-4">Vstup na con, voda, badge, conbook, základné veci</p>
               <p class="font-heading font-bold text-2xl text-icy-cyan">ZADARMO</p>
             </div>
             <div class="card border-2 border-warm-brown relative">
@@ -254,15 +254,20 @@
             <label class="flex items-start gap-3 cursor-pointer">
               <input
                 type="checkbox"
-                id="tos-agree"
+                id="policies-agree"
                 class="mt-1 w-5 h-5 rounded border-cool-grey text-icy-cyan focus:ring-icy-cyan"
               />
               <span class="text-charcoal">
-                Súhlasím s
-                <a href="tos.html" class="text-icy-cyan hover:text-icy-cyan-dark underline">podmienkami účasti</a>.
-                <span class="block text-sm text-cool-grey mt-1"
-                  >Pre registráciu musíš súhlasiť s podmienkami účasti.</span
-                >
+                Prečítal/a som si a súhlasím s nasledujúcimi dokumentmi:
+                <ul class="list-disc list-inside text-sm text-cool-grey mt-2 space-y-1">
+                  <li><a href="tos.html" class="text-icy-cyan hover:underline">Podmienky účasti</a></li>
+                  <li><a href="privacy.html" class="text-icy-cyan hover:underline">Ochrana osobných údajov</a></li>
+                  <li><a href="rules.html" class="text-icy-cyan hover:underline">Pravidlá podujatia</a></li>
+                  <li><a href="anti-harassment.html" class="text-icy-cyan hover:underline">Zásady proti obťažovaniu</a></li>
+                </ul>
+                <span class="block text-sm text-cool-grey mt-2 font-medium">
+                  Zaškrtnutím potvrdzuješ, že si dokumenty prečítal/a a súhlasíš s nimi.
+                </span>
               </span>
             </label>
             <label class="flex items-start gap-3 cursor-pointer mt-4">
@@ -273,35 +278,13 @@
               />
               <span class="text-charcoal">Potvrdzujem, že mám do 30 rokov</span>
             </label>
-            <label class="flex items-start gap-3 cursor-pointer mt-4">
-              <input
-                type="checkbox"
-                id="privacy-agree"
-                class="mt-1 w-5 h-5 rounded border-cool-grey text-icy-cyan focus:ring-icy-cyan"
-              />
-              <span class="text-charcoal">
-                Súhlasím so
-                <a href="privacy.html" class="text-icy-cyan hover:text-icy-cyan-dark underline">spracovaním osobných údajov</a>.
-              </span>
-            </label>
-            <label class="flex items-start gap-3 cursor-pointer mt-4">
-              <input
-                type="checkbox"
-                id="rules-agree"
-                class="mt-1 w-5 h-5 rounded border-cool-grey text-icy-cyan focus:ring-icy-cyan"
-              />
-              <span class="text-charcoal">
-                Súhlasím s
-                <a href="rules.html" class="text-icy-cyan hover:text-icy-cyan-dark underline">pravidlami podujatia</a>.
-              </span>
-            </label>
           </div>
           <div class="card mb-8 relative" id="pretix-wrapper">
             <!-- Blocking overlay -->
             <div id="pretix-overlay" class="absolute inset-0 rounded-lg z-10 flex flex-col items-center justify-center text-center p-6" style="background-color: #2d2d33f2;">
               <div class="text-4xl mb-3">🔒</div>
               <p class="font-heading font-semibold text-lg text-surface mb-2">Zaškrtni všetky súhlasy pre prístup k registrácii</p>
-              <p class="text-cool-grey-light text-sm">Musíš súhlasiť s podmienkami účasti, vekovým obmedzením, spracovaním údajov a pravidlami podujatia.</p>
+              <p class="text-cool-grey-light text-sm">Musíš súhlasiť s podmienkami účasti, spracovaním údajov, pravidlami podujatia, zásadami proti obťažovaniu a vekovým obmedzením.</p>
             </div>
             <h2 class="font-heading font-semibold text-xl text-charcoal mb-4">Kúp si lístok</h2>
             <pretix-widget event="https://tickets.furosion.com/furosion/blavff/"></pretix-widget>
@@ -318,15 +301,13 @@
       </section>
       <script>
         (function() {
-          var tos = document.getElementById("tos-agree");
+          var policies = document.getElementById("policies-agree");
           var age = document.getElementById("age-confirm");
-          var privacy = document.getElementById("privacy-agree");
-          var rules = document.getElementById("rules-agree");
           var overlay = document.getElementById("pretix-overlay");
 
           function checkAll() {
-            if (tos && age && privacy && rules && overlay) {
-              if (tos.checked && age.checked && privacy.checked && rules.checked) {
+            if (policies && age && overlay) {
+              if (policies.checked && age.checked) {
                 overlay.style.display = "none";
               } else {
                 overlay.style.display = "flex";
@@ -334,10 +315,8 @@
             }
           }
 
-          if (tos) tos.addEventListener("change", checkAll);
+          if (policies) policies.addEventListener("change", checkAll);
           if (age) age.addEventListener("change", checkAll);
-          if (privacy) privacy.addEventListener("change", checkAll);
-          if (rules) rules.addEventListener("change", checkAll);
           checkAll();
         })();
       </script>
