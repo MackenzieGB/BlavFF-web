@@ -1,0 +1,487 @@
+EVENT: BlavFF 2026 - Bratislava FurFest
+TYPE: Mini Festival
+STATUS: Scheduled
+EVENT_ID: blavff-2026
+VERSION: 1.0
+LAST_UPDATED: 2026-05
+
+=== ORGANIZER ===
+NAME: Furosion o.z.
+TYPE: Non-profit youth organization (Občianske združenie)
+LEGAL_ID: 57 528 900
+ADDRESS: Tomášikova 45A, 831 04 Bratislava, Slovak Republic
+EMAIL: support@furosion.com
+WEBSITE: https://www.furosion.org
+FOCUS: Safe and structured community events for young people
+LOCATION: Bratislava, Slovakia
+
+=== EVENT CONTACT ===
+EVENT_EMAIL: blavff@furosion.org
+PRESS_EMAIL: blavff@furosion.org
+PARTNERSHIP_EMAIL: support@furosion.com
+
+=== EVENT DETAILS ===
+NAME: BlavFF 2026 - Bratislava FurFest
+DESCRIPTION: Mini festival for furry, therian and cosplay communities/subcultures. First edition of its kind in Slovakia, created because there was a lack of furry events for young people in the country.
+TAGLINE: Furry, therian and cosplay mini festival
+DATE: 2026-08-03
+DAY_OF_WEEK: Monday
+START_TIME: 09:30
+END_TIME: 19:30
+TIMEZONE: Europe/Bratislava (UTC+2)
+ATTENDANCE_MODE: Offline
+EVENT_STATUS: Scheduled
+AGE_RESTRICTION: Under 30 years old
+AGE_EXCEPTIONS: Legal guardians, speakers/presenters, partners, artist alley vendors
+EDITION: 1st
+
+=== VENUE ===
+NAME: Youth Hub (Bratislavská platforma mladých)
+ADDRESS: Štefánikova 892/39, 811 04 Bratislava, Slovakia
+ACCESSIBLE: No
+ACCESSIBILITY_NOTE: Youth Hub is NOT wheelchair accessible. The space has stairs and no elevator. For accessibility questions, contact support@furosion.com.
+PARKING: PASS zone 1032 nearby
+GPS: 48.153, 17.104
+MAPS_URL: https://www.google.com/maps/dir/?api=1&destination=Youth+Hub+Bratislava+Stefanikova+39&travelmode=transit
+MAPS_EMBED: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.5!2d17.104!3d48.153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c890003de21c1%3A0xf6205519fdc9de63!2sYouth%20Hub%20(Bratislavsk%C3%A1%20Platforma%20Mlad%C3%BDch)!5e1!3m2!1sen!2ssk!4v1778775739767!5m2!1sen!2ssk
+
+=== TRANSPORTATION ===
+PUBLIC_TRANSPORT_STOP: Pod Stanicou
+BUS_LINES: 1, 21, 25, 32, 40, 42, 44, 49, 61, 63, 64, 71, 83, 84, 93, 184, 205, 209, 219, 245, 250, 251, 269, 299
+TRAIN: 5 minutes walk from main station (Hlavná stanica)
+AIRPORT: From M. R. Štefánik Airport: Bus 61 to main station, then 5 min walk
+
+=== WEBSITE ===
+DOMAIN: blavff.sk
+PRIMARY_URL: https://blavff.sk/
+LANGUAGE_SK: https://blavff.sk/
+LANGUAGE_EN: https://blavff.sk/en/
+CANONICAL: https://blavff.sk/
+LANG_ALTERNATES: sk=https://blavff.sk/, en=https://blavff.sk/en/, x-default=https://blavff.sk/
+
+=== SOCIAL MEDIA ===
+INSTAGRAM: https://www.instagram.com/furosionorg (@furosionorg)
+TIKTOK: https://www.tiktok.com/@furosionorg (@furosionorg)
+WHATSAPP_CHANNEL: https://whatsapp.com/channel/0029Vb7S2UhGzzKKmLhHMt3f
+
+=== TICKETING ===
+PLATFORM: Pretix
+TICKET_URL: https://tickets.furosion.com/furosion/blavff/widget/v2
+TICKET_WIDGET_CSS: https://tickets.furosion.com/furosion/blavff/widget/v2.css
+TICKET_WIDGET_JS: https://tickets.furosion.com/widget/v2.sk.js
+REGISTRATION_URL: https://blavff.sk/register.html
+REGISTRATION_REQUIRED: Yes
+REGISTRATION_PAGE: register.html
+
+=== TICKET TYPES ===
+TICKET_1:
+  NAME: Free Registration
+  PRICE: 0 EUR
+  INCLUDES: Event entry, water, badge, conbook, basic items
+  URL: https://blavff.sk/register.html
+
+TICKET_2:
+  NAME: Supporter Ticket
+  PRICE: From 6.99 EUR (Recommended: 10 EUR)
+  INCLUDES: Everything from free registration + handwritten message + t-shirt
+  URL: https://blavff.sk/register.html
+  RECOMMENDED: Yes
+
+=== SCHEDULE ===
+9:30 - Registration and Opening
+  DESCRIPTION: Welcome to BlavFF!
+  LOCATION: Registration Desk
+
+13:30 - Fursuit/Costume Competition
+  DESCRIPTION: Come see different fursuits and costumes and vote for your favorite.
+  LOCATION: Lecture Room
+
+14:00 - Art Competition
+  DESCRIPTION: Come see various art pieces and vote for your favorite.
+  LOCATION: Lecture Room
+
+15:00 - Q&A with Furosion o.z. Team
+  DESCRIPTION: Have questions about how we operate or how to organize your own event? Come ask our team. 30 minutes of open conversation.
+  DURATION: 30 minutes
+  LOCATION: Lecture Room
+
+18:30 - Closing Ceremony and Competition Results Announcement
+  DESCRIPTION: Thanking participants and awarding prizes.
+  LOCATION: Lecture Room
+
+19:30 - Event Closure
+  DESCRIPTION: Thank you for being with us, but please leave the premises now.
+  LOCATION: Everywhere
+
+=== COMPETITIONS ===
+COMPETITION_1:
+  NAME: Fursuit/Costume Competition
+  DESCRIPTION: Show off your costume and compete for prizes!
+  CATEGORIES: Best in Show, Best Craftsmanship, Best Performance, and more
+  REGISTRATION_FORM: Fillout (ID: xx7XzZNaXUus)
+  URL: https://blavff.sk/competitions.html
+
+COMPETITION_2:
+  NAME: Art Competition
+  DESCRIPTION: Show off your artistic skills!
+  CATEGORIES: Digital Art, Traditional Art, Photography, and more
+  REGISTRATION_FORM: Fillout (ID: xx7XzZNaXUus)
+  URL: https://blavff.sk/competitions.html
+
+=== ARTIST ALLEY ===
+DESCRIPTION: Artist Alley is a space where artists sell their work - prints, stickers, badges, comics, and everything in between. It is the heart of every con and a place to find unique items.
+APPLICATION_FORM: Fillout (ID: 4896Rg9V8jus)
+URL: https://blavff.sk/artist-alley.html
+
+CONFIRMED_ARTISTS:
+  ARTIST_1:
+    NAME: LemonFangz
+    DESCRIPTION: Well-known Slovak furry artist and fursuit maker with a strong community presence. Specializes in fursuit partials and tails, accessories, stickers, prints, keychains, and custom portraits.
+    WEBSITE: https://lemonfangzcard.carrd.co
+    LOGO: lemonfangzlogo.png
+
+  ARTIST_2:
+    NAME: SolverPaw
+    DESCRIPTION: Young artist, cosplayer, and animator. Offers custom and premade high-quality therian gear: therian masks, kemonomimi ears, fursuit tails, kandi jewelry, and stickers.
+    TIKTOK: https://www.tiktok.com/@uzi_doorman_bite_me_md
+    LOGO: uzi.png
+
+  ARTIST_3:
+    NAME: Kitty Corner
+    DESCRIPTION: Art booth focused on cat motifs. Offers original illustrations, keychains, stickers, prints, bags, and handmade accessories like crocheted animals and beaded charms.
+    BEHANCE: https://www.behance.net/gallery/243238465/Kitty-Corner-Booth
+    LOGO: KittyCornerLogo.png
+
+  ARTIST_4:
+    NAME: Rocky's Studio
+    DESCRIPTION: Talented artist and fursuit maker. Specializes in quality fursuit paws and original digital and traditional art. At BlavFF you will find works that combine precision with creative design.
+    WHATSAPP: https://whatsapp.com/channel/0029Vb6nbBX0wajuvBfsy905
+    LOGO: rockysstudiologo.png
+
+  ARTIST_5:
+    NAME: Squirmy Wormy
+    DESCRIPTION: Creative maker of handmade accessories. Offers original bracelets, decorated collars, and unique hand-drawn and handcrafted items that bring playfulness and style to any outfit.
+    TELEGRAM: https://t.me/squirmywormysk
+    LOGO: worm.png
+
+=== GUESTS ===
+PAGE_URL: https://blavff.sk/guests.html
+APPLICATION_FORM: Fillout (ID: 4hpwcoJXxAus)
+NOTE: Guests listed are the same as Artist Alley artists.
+
+=== PRESENTATIONS & WORKSHOPS ===
+PAGE_URL: https://blavff.sk/prednasky.html
+SPEAKERS_LIST: Coming soon
+APPLICATION_FORM: Fillout (ID: 4hpwcoJXxAus)
+TOPIC_EXAMPLES: Furry community lecture, Drawing workshop, Therian identity panel, Cosplay tutorial, Anything you enjoy!
+
+=== VOLUNTEERING ===
+PAGE_URL: https://blavff.sk/volunteer.html
+APPLICATION_FORM: Fillout (ID: von2aiWAw7us)
+DESCRIPTION: If you want to help organize BlavFF, fill out the application form.
+
+=== PARTNERS ===
+PAGE_URL: https://blavff.sk/partners.html
+CONFIRMED_PARTNERS:
+  PARTNER_1:
+    NAME: Youth Hub (Bratislavská platforma mladých)
+    INSTAGRAM: https://www.instagram.com/bratislavska_platforma_mladych/
+    LOGO: bpm.png
+PARTNERSHIP_CONTACT: support@furosion.com
+PARTNERSHIP_WEBSITE: https://furosion.org
+
+=== PRESS KIT ===
+PAGE_URL: https://blavff.sk/press-kit.html
+LOGOS:
+  - logonobg.png (PNG - Transparent background)
+  - logowb.png (PNG - White version)
+POSTERS: Coming soon
+BRAND_GUIDELINES: Use logos and materials for non-commercial or media purposes only.
+
+=== NEWS ===
+PAGE_URL: https://blavff.sk/news.html
+CHANNELS: Instagram, TikTok, WhatsApp Channel
+
+=== POLICIES ===
+
+TERMS_OF_PARTICIPATION:
+  URL: https://blavff.sk/tos.html
+  ELIGIBILITY: Event is for persons under 30 years old. Exceptions apply for presenters, partners/artist alley vendors, and guests.
+  BEHAVIOR: Participants must behave respectfully towards others. Any harassment, discrimination, or aggressive behavior will result in exclusion from the event.
+  REGISTRATION: Registration is mandatory for all participants. The organizer reserves the right to refuse registration without giving a reason.
+  LIABILITY: The organizer is not responsible for lost or damaged participant belongings. Participants are responsible for their own behavior.
+  PHOTOGRAPHY: Photography is permitted for non-commercial purposes. The organizer may use photographs from the event for promotional purposes.
+  CHANGES: The organizer reserves the right to change these terms. Changes will be announced in advance.
+
+PRIVACY_POLICY:
+  URL: https://blavff.sk/privacy.html
+  LAST_UPDATED: May 2026
+  CONTROLLER: Furosion o.z., Tomášikova 45A, 831 04 Bratislava, IČO: 57 528 900
+  DATA_COLLECTED: Name and nickname, email address, phone number, IP address, device and browser technical data, event registration data, website analytics data, communication data from forms or chat.
+  PURPOSES: Event organization, participant registration, visitor communication, website functionality, traffic analysis, service and security improvement, handling user requests.
+  THIRD_PARTY_SERVICES:
+    - Microsoft Clarity (website usage analysis, heatmaps, anonymized interaction tracking)
+    - Google Analytics (traffic measurement and web analytics)
+    - tawk.to (live chat and customer support)
+    - Pretix (participant registration and ticket management)
+    - Google Maps (embedded maps)
+  DATA_RETENTION: Data is retained only as long as necessary for the purposes stated or as required by law.
+  USER_RIGHTS: Access, rectification, erasure, restriction of processing, data portability, objection, withdrawal of consent.
+  COMPLAINT_AUTHORITY: Office for Personal Data Protection of the Slovak Republic (https://dataprotection.gov.sk)
+
+EVENT_RULES:
+  URL: https://blavff.sk/rules.html
+  LAST_UPDATED: May 2026
+  GENERAL_BEHAVIOR:
+    - Participants must behave politely and respect other visitors, organizers, volunteers, and event spaces.
+    - Any forms of harassment, intimidation, discrimination, threats, or intentional disruption of the event are not permitted.
+    - Organizers reserve the right to deny entry or remove participants without compensation for rule violations or inappropriate behavior.
+    - Participants must follow instructions from organizers, volunteers, and venue staff.
+    - The event is intended primarily for young people and the fandom community. Behavior inappropriate for youth or public spaces will not be tolerated.
+  SAFETY_AND_COMFORT:
+    - Respect other people's personal space.
+    - Physical contact including hugging, touching costumes, or close-up photography should only occur with the other person's consent.
+    - Dangerous objects, weapons, or realistic weapon replicas are not permitted unless explicitly allowed by organizers.
+    - Running, pushing, or other dangerous behavior indoors is not permitted.
+  PHOTOGRAPHY_AND_RECORDING:
+    - Photography for non-commercial purposes is permitted.
+    - Always ask before photographing someone, especially in costume/fursuit.
+    - Respect if someone declines to be photographed.
+    - Commercial photography requires organizer permission.
+  ALCOHOL_AND_SUBSTANCES:
+    - Consumption of alcohol and illegal substances is prohibited.
+  MINORS:
+    - Minors under 15 must be accompanied by a legal guardian.
+    - Accompanying persons of minors do not need registration - just arrive with a registered participant.
+  ENFORCEMENT:
+    - Violation of rules may result in removal from the event without compensation.
+    - Serious violations may be reported to authorities.
+
+ANTI_HARASSMENT_POLICY:
+  URL: https://blavff.sk/anti-harassment.html
+  LAST_UPDATED: May 2026
+  SCOPE: Applies to all participants, guests, volunteers, artists, speakers, vendors, photographers, security staff, organizers, and staff.
+  DEFINITION: Harassment is any unwanted behavior that causes another person to feel uncomfortable, unsafe, intimidated, humiliated, or targeted. Can be verbal, physical, visual, online, or psychological.
+  PROHIBITED_BEHAVIORS:
+    - Bullying, intimidation, or discrimination
+    - Offensive comments regarding gender, sexuality, identity, appearance, race, nationality, religion, or disability
+    - Sexual remarks, unwanted flirting, or inappropriate advances
+    - Touching others without consent
+    - Stalking or blocking someone's movement
+    - Photography or recording without permission where privacy is expected
+    - Repeated messaging, calling, or contacting after being asked to stop
+    - Intentional disruption of lectures, workshops, or programming
+    - Mocking or harassing people for being part of furry, therian, cosplay, or alternative communities
+    - Harassment related to restroom use or gender identity
+    - Threats, stalking, or intimidation
+    - Intentional damage to costumes, artwork, merchandise, or personal belongings
+  CONSENT:
+    - Cosplay, fursuit, or alternative clothing is not consent.
+    - If someone tells you your behavior is inappropriate or unwanted, you must stop immediately.
+    - If someone asks you to leave them alone, you must respect that.
+  REPORTING:
+    - Report harassment to organizers, volunteers, or staff.
+    - Contact: blavff@furosion.org
+    - Reports are taken seriously and handled confidentially.
+  CONSEQUENCES:
+    - Violations may result in removal from the event without compensation.
+    - Serious violations may be reported to authorities.
+  INTENT:
+    - Harassment is determined by how the affected person feels, regardless of the perpetrator's intent.
+
+=== REGISTRATION REQUIREMENTS ===
+CHECKBOX_1:
+  ID: policies-agree
+  LABEL: I have read and agree to the following documents: Terms of Participation, Privacy Policy, Event Rules, Anti-Harassment Policy
+  LINKS:
+    - tos.html (Terms of Participation)
+    - privacy.html (Privacy Policy)
+    - rules.html (Event Rules)
+    - anti-harassment.html (Anti-Harassment Policy)
+
+CHECKBOX_2:
+  ID: age-confirm
+  LABEL: I confirm that I am under 30 years old
+
+PRETIX_OVERLAY:
+  ID: pretix-overlay
+  BLOCKED_MESSAGE: Check all consents to access registration
+  BLOCKED_UNTIL: Both checkboxes must be checked
+
+=== TRACKING & ANALYTICS ===
+GOOGLE_TAG_MANAGER:
+  ID: GTM-5KX3NX44
+  URL: https://www.googletagmanager.com/gtm.js?id=GTM-5KX3NX44
+
+MICROSOFT_CLARITY:
+  ID: wr2a5xebeo
+  URL: https://www.clarity.ms/tag/wr2a5xebeo
+
+GOOGLE_ADS:
+  ID: AW-18156080294
+  URL: https://www.googletagmanager.com/gtag/js?id=AW-18156080294
+
+GOOGLE_ANALYTICS:
+  NOTE: Configured via Google Tag Manager
+
+=== SEO & META ===
+TITLE: BlavFF - Bratislava FurFest 2026 | BlavFF
+DESCRIPTION: BlavFF 2026 - Bratislava FurFest. Mini festival in Bratislava for furry, therian and cosplay communities. 3. 8. 2026, Youth Hub. Fursuit competition, art competition, presentations, workshops, DJ set. Registration open!
+KEYWORDS: BlavFF, Bratislava FurFest, furry Bratislava, furry festival Bratislava, furry convention Slovakia, therian meetup Bratislava, cosplay event Slovakia, fursuit competition, art convention, furry con 2026, furry community Slovakia, Bratislava event, youth festival, Furosion
+AUTHOR: Furosion o.z.
+THEME_COLOR: #1a1a2e
+OG_TYPE: website
+OG_URL: https://blavff.sk/
+OG_TITLE: BlavFF 2026 - Bratislava FurFest | Furry, Therian & Cosplay Mini Festival
+OG_DESCRIPTION: Mini festival in Bratislava for furry, therian and cosplay communities. 3. 8. 2026, Youth Hub. Fursuit competition, art competition, presentations, workshops. Registration open!
+OG_IMAGE: https://blavff.sk/logonobg.png (512x512)
+OG_LOCALE: sk_SK
+TWITTER_CARD: summary_large_image
+TWITTER_URL: https://blavff.sk/
+TWITTER_IMAGE: https://blavff.sk/logonobg.png
+
+=== STRUCTURED DATA (JSON-LD) ===
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "BlavFF 2026 - Bratislava FurFest",
+  "description": "Mini festival in Bratislava for furry, therian and cosplay communities. Fursuit competition, art competition, presentations, workshops, DJ set. 3. 8. 2026, Youth Hub, Bratislava.",
+  "image": "https://blavff.sk/logonobg.png",
+  "startDate": "2026-08-03T09:30:00+02:00",
+  "endDate": "2026-08-03T19:30:00+02:00",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "Youth Hub (Bratislavská platforma mladých)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Štefánikova 892/39",
+      "addressLocality": "Bratislava",
+      "postalCode": "811 04",
+      "addressCountry": "SK"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Furosion o.z.",
+    "url": "https://www.furosion.org"
+  },
+  "url": "https://blavff.sk/",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://blavff.sk/register.html",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-01-01T00:00:00+01:00"
+  },
+  "sameAs": [
+    "https://www.instagram.com/furosionorg",
+    "https://www.tiktok.com/@furosionorg"
+  ]
+}
+
+=== WEBSITE PAGES ===
+SLOVAK_PAGES:
+  - index.html (Home)
+  - about.html (About)
+  - schedule.html (Schedule)
+  - prednasky.html (Presentations & Workshops)
+  - competitions.html (Competitions)
+  - artist-alley.html (Artist Alley)
+  - guests.html (Guests)
+  - volunteer.html (Volunteers)
+  - venue.html (Venue)
+  - partners.html (Partners)
+  - register.html (Registration)
+  - press-kit.html (Press Kit)
+  - news.html (News)
+  - tos.html (Terms of Participation)
+  - privacy.html (Privacy Policy)
+  - rules.html (Event Rules)
+  - anti-harassment.html (Anti-Harassment Policy)
+
+ENGLISH_PAGES:
+  - en/index.html (Home)
+  - en/about.html (About)
+  - en/schedule.html (Schedule)
+  - en/prednasky.html (Presentations & Workshops)
+  - en/competitions.html (Competitions)
+  - en/artist-alley.html (Artist Alley)
+  - en/guests.html (Guests)
+  - en/volunteer.html (Volunteers)
+  - en/venue.html (Venue)
+  - en/partners.html (Partners)
+  - en/register.html (Registration)
+  - en/press-kit.html (Press Kit)
+  - en/news.html (News)
+  - en/tos.html (Terms of Participation)
+  - en/privacy.html (Privacy Policy)
+  - en/rules.html (Event Rules)
+  - en/anti-harassment.html (Anti-Harassment Policy)
+
+=== SITE ASSETS ===
+LOGOS:
+  - logonobg.png (Main logo, transparent background)
+  - logowb.png (White logo variant)
+FAVICONS:
+  - /apple-touch-icon.png (180x180)
+  - /favicon-32x32.png (32x32)
+  - /favicon-16x16.png (16x16)
+  - /site.webmanifest
+FONTS:
+  - Caveat (400, 600) - Google Fonts
+  - Inter (400, 500, 600) - Google Fonts
+  - Outfit (500, 600, 700) - Google Fonts
+STYLESHEET:
+  - styles.css
+
+=== EXTERNAL FORMS (FILLOUT) ===
+COMPETITION_REGISTRATION: xx7XzZNaXUus
+ARTIST_ALLEY_APPLICATION: 4896Rg9V8jus
+GUEST_SPEAKER_APPLICATION: 4hpwcoJXxAus
+VOLUNTEER_APPLICATION: von2aiWAw7us
+
+=== DONATION ===
+URL: https://furosion.org
+NOTE: Donation link in navigation (desktop and mobile menus) across all pages.
+
+=== FOOTER STRUCTURE ===
+SECTIONS:
+  - Brand (logo, description, date/location)
+  - Navigation (quick links)
+  - Contact (email: blavff@furosion.org)
+  - Get Involved (registration, volunteers, venue, partners, press kit)
+  - Social (Instagram, TikTok, WhatsApp)
+  - Legal (Terms, Privacy, Rules, Anti-Harassment)
+NOTE: Exactly one Contact section per page across all 36 files.
+
+=== NAVIGATION ===
+DESKTOP_MENU:
+  - O akcii (About) -> about.html
+  - Program (Schedule) -> schedule.html
+  - Prednášky (Presentations) -> prednasky.html
+  - Súťaže (Competitions) -> competitions.html
+  - Artist Alley -> artist-alley.html
+  - Kto bude (Guests) -> guests.html
+  - Pomocníci (Volunteers) -> volunteer.html
+  - Miesto (Venue) -> venue.html
+  - Partneri (Partners) -> partners.html
+  - Daruj (Donate) -> https://furosion.org
+  - Press Kit -> press-kit.html
+  - Novinky (News) -> news.html
+  - Registrácia (Registration) -> register.html (button)
+
+MOBILE_MENU:
+  Same as desktop, with language switcher (EN) and registration button.
+
+=== LANGUAGE SWITCHER ===
+SK_TO_EN: en/index.html (from index.html), en/[page].html (from [page].html)
+EN_TO_SK: ../[page].html (from en/[page].html)
+
+=== COUNTDOWN ===
+TARGET_DATE: 2026-08-03T09:30:00+02:00
+DISPLAY: Days, Hours, Minutes, Seconds
+
+=== END OF FILE ===
