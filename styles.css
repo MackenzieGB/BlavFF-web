@@ -1838,4 +1838,70 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+details.info-section {
+  padding: 0;
+}
+details.info-section summary {
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+details.info-section summary::-webkit-details-marker {
+  display: none;
+}
+details.info-section summary h3 {
+  margin: 0;
+}
+details.info-section > div {
+  padding: 0 2.5rem 2rem 2.5rem;
+}
+details.info-section > div ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+details.info-section > div ol li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+details.info-section > div ol li:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 48rem) {
+  details.info-section summary {
+    padding: 1.5rem 1.75rem;
+  }
+  details.info-section > div {
+    padding: 0 1.75rem 1.5rem 1.75rem;
+  }
+}
+details.card {
+  padding: 0;
+}
+details.card summary {
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  list-style: none;
+}
+details.card summary::-webkit-details-marker {
+  display: none;
+}
+details.card > div {
+  padding: 0 2rem 1.5rem 2rem;
+}
+details.card > div p {
+  margin: 0;
+  line-height: 1.6;
+}
+@media (max-width: 48rem) {
+  details.card summary {
+    padding: 1.25rem 1.5rem;
+  }
+  details.card > div {
+    padding: 0 1.5rem 1.25rem 1.5rem;
+  }
+}
 
