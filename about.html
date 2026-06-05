@@ -144,43 +144,6 @@
             <img src="logonobg.png" alt="BlavFF Logo" class="h-10 w-auto" />
             <span class="font-heading font-extrabold text-xl text-charcoal uppercase tracking-wider">BlavFF</span>
           </a>
-          <nav class="hidden xl:flex items-center gap-6">
-            <a href="about.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >O akcii</a
-            >
-            <a href="schedule.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Program</a
-            >
-            <a href="guests.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Kto bude</a
-            >
-            <a href="finley.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider">Finley</a>
-            <a href="competitions.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Súťaže</a
-            >
-            <a href="prednasky.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Prednášky</a
-            >
-            <a href="artist-alley.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Artist Alley</a
-            >
-            <a href="venue.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Miesto</a
-            >
-            <a href="volunteer.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Pomocníci</a
-            >
-            <a href="partners.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Partneri</a
-            >
-            <a href="news.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Novinky</a
-            >
-            <a href="contact.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider">Kontakt</a>
-            <a href="https://furosion.org" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider"
-              >Daruj</a
-            >
-          </nav>
           <div class="flex items-center gap-3">
             <a
               href="en/about.html"
@@ -189,7 +152,7 @@
               EN
             </a>
             <a href="register.html" class="btn btn-primary text-sm py-2 px-4">Registrácia</a>
-            <button id="mobile-menu-btn" class="xl:hidden p-2 text-charcoal border-3 border-charcoal" aria-label="Menu">
+            <button id="menu-toggle-btn" class="p-2 text-charcoal border-3 border-charcoal" aria-label="Menu">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
                 <path
                   stroke-linecap="round"
@@ -201,7 +164,7 @@
           </div>
         </div>
       </div>
-      <div id="mobile-menu" class="hidden xl:hidden bg-surface border-t-4 border-charcoal">
+      <div id="nav-menu" class="hidden bg-surface border-t-4 border-charcoal">
         <nav class="flex flex-col p-4 gap-3 max-h-[80vh] overflow-y-auto">
           <a href="about.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">O akcii</a>
           <a href="schedule.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Program</a>
@@ -217,16 +180,15 @@
           <a href="contact.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Kontakt</a>
           <a href="https://furosion.org" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Daruj</a>
           <a href="press-kit.html" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Press Kit</a>
-          <a href="register.html" class="btn btn-primary mt-3 text-center">Registrácia</a>
         </nav>
       </div>
     </header>
     <script>
-      const btn = document.getElementById("mobile-menu-btn");
-      const menu = document.getElementById("mobile-menu");
-      if (btn && menu) {
-        btn.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
+      const menuBtn = document.getElementById("menu-toggle-btn");
+      const navMenu = document.getElementById("nav-menu");
+      if (menuBtn && navMenu) {
+        menuBtn.addEventListener("click", () => {
+          navMenu.classList.toggle("hidden");
         });
       }
     </script>
