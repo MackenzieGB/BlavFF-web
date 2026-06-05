@@ -2,6 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /colour
 Disallow: /en/colour
-Disallow: /*.html$
 
 Sitemap: https://blavff.sk/sitemap.xml
