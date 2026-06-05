@@ -1,14 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /colour
+Disallow: /en/colour
+Disallow: /*.html$
 
 Sitemap: https://blavff.sk/sitemap.xml
-
-# Allow all major crawlers
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Bingbot
-Allow: /
