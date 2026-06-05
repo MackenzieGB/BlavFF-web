@@ -1489,6 +1489,7 @@
 }
 .animate-marquee {
   animation: marquee 30s linear infinite;
+  will-change: transform;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
