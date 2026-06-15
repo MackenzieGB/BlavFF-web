@@ -112,7 +112,14 @@
       gtag('config', 'AW-18156080294');
     </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  </head>
+    <!-- New Relic Browser Monitoring -->
+  <script type="text/javascript">
+;window.NREUM||(NREUM={});NREUM.init={browser_consent_mode:{enabled:false},privacy:{cookies_enabled:true},session_replay:{enabled:true,block_selector:"",mask_text_selector:"*",sampling_rate:10.0,error_sampling_rate:100.0,mask_all_inputs:true,collect_fonts:true,inline_images:false,inline_stylesheet:true,fix_stylesheets:true,preload:false,mask_input_options:{}},distributed_tracing:{enabled:true},performance:{capture_measures:true},ajax:{deny_list:["bam.eu01.nr-data.net"],capture_payloads:"none"}};
+;NREUM.loader_config={accountID:"8177575",trustKey:"8177575",agentID:"538865001",licenseKey:"NRJS-ee8553f793c36ddb2b5",applicationID:"538865001"};
+;NREUM.info={beacon:"bam.eu01.nr-data.net",errorBeacon:"bam.eu01.nr-data.net",licenseKey:"NRJS-ee8553f793c36ddb2b5",applicationID:"538865001",sa:1};
+  </script>
+  <script src="https://js-agent.newrelic.com/nr-loader-spa-1.316.0.min.js" async></script>
+</head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -238,45 +245,100 @@
           <!-- 4. Služby tretích strán -->
           <div class="info-section">
             <h2 class="text-3xl md:text-4xl font-heading font-extrabold text-charcoal mb-4 uppercase tracking-tighter">4. Používané služby tretích strán</h2>
-            <p class="text-cool-grey mb-6">Na našich stránkach môžeme používať služby tretích strán, ktoré môžu spracúvať údaje podľa vlastných podmienok.</p>
+            <p class="text-cool-grey mb-6">Na našich stránkach používame služby tretích strán, ktoré môžu spracúvať údaje podľa vlastných podmienok.</p>
 
-            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.1 Microsoft Clarity</h3>
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.1 Google Tag Manager</h3>
+            <p class="text-cool-grey mb-2">Používame Google Tag Manager na správu analytických a marketingových nástrojov. Samotný GTM nezhromažďuje osobné údaje, ale umožňuje načítanie ďalších služieb (Google Analytics, Google Ads).</p>
+            <p class="text-cool-grey mb-4">Viac: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Google Privacy Policy</a></p>
+
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.2 Google Analytics</h3>
+            <p class="text-cool-grey mb-2">Používame Google Analytics na meranie návštevnosti a analytiku webu. Služba používa cookies na identifikáciu unikátnych návštevníkov a sledovanie správania na stránke.</p>
+            <p class="text-cool-grey mb-2">Google môže zhromažďovať: IP adresu, údaje o zariadení, informácie o používaní webu.</p>
+            <p class="text-cool-grey mb-4">Viac: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Google Privacy Policy</a></p>
+
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.3 Google Ads</h3>
+            <p class="text-cool-grey mb-2">Používame Google Ads na meranie konverzií z reklamných kampaní. Služba ukladá cookies, keď používateľ klikne na našu reklamu.</p>
+            <p class="text-cool-grey mb-4">Viac: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Google Privacy Policy</a></p>
+
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.4 Microsoft Clarity</h3>
             <p class="text-cool-grey mb-2">Používame službu Microsoft Clarity na analýzu používania webu, heatmapy a anonymizované sledovanie interakcií používateľov.</p>
             <p class="text-cool-grey mb-2">Služba môže zhromažďovať: pohyb myši, kliknutia, scrollovanie, technické údaje o zariadení.</p>
             <p class="text-cool-grey mb-4">Viac: <a href="https://privacy.microsoft.com/" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Microsoft Privacy Statement</a></p>
 
-            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.2 Google Analytics</h3>
-            <p class="text-cool-grey mb-2">Používame Google Analytics na meranie návštevnosti a analytiku webu.</p>
-            <p class="text-cool-grey mb-2">Google môže zhromažďovať: IP adresu, údaje o zariadení, informácie o používaní webu.</p>
-            <p class="text-cool-grey mb-4">Viac: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Google Privacy Policy</a></p>
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.5 New Relic</h3>
+            <p class="text-cool-grey mb-2">Používame New Relic Browser Monitoring na monitorovanie výkonnosti webu, sledovanie chýb a zabezpečenie spoľahlivosti stránok.</p>
+            <p class="text-cool-grey mb-2">Služba zhromažďuje: údaje o výkonnosti načítania stránok, chyby JavaScript, metriky interakcií, session replay (nahrávanie relácií). Údaje sa uchovávajú v session storage, nie v cookies.</p>
+            <p class="text-cool-grey mb-4">Viac: <a href="https://newrelic.com/termsandconditions/privacy-policy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">New Relic Privacy Policy</a></p>
 
-            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.3 tawk.to</h3>
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.6 tawk.to</h3>
             <p class="text-cool-grey mb-2">Používame službu tawk.to na poskytovanie live chatu a zákazníckej podpory.</p>
             <p class="text-cool-grey mb-2">Pri použití chatu môžu byť spracúvané: obsah správ, IP adresa, technické údaje o zariadení.</p>
             <p class="text-cool-grey mb-4">Viac: <a href="https://www.tawk.to/privacy-policy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">tawk.to Privacy Policy</a></p>
 
-            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.4 Pretix</h3>
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.7 Pretix</h3>
             <p class="text-cool-grey mb-2">Na registráciu účastníkov a správu vstupeniek používame systém Pretix.</p>
             <p class="text-cool-grey mb-2">Pretix môže spracúvať: meno, e-mail, registračné údaje, platobné informácie.</p>
             <p class="text-cool-grey mb-4">Viac: <a href="https://pretix.eu/about/en/privacy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Pretix Privacy Information</a></p>
 
-            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.5 Google Maps</h3>
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-4 uppercase">4.8 Google Maps</h3>
             <p class="text-cool-grey mb-2">Na stránkach môžeme používať vložené mapy Google Maps.</p>
             <p class="text-cool-grey mb-2">Google môže pri načítaní mapy spracúvať: IP adresu, údaje o zariadení, cookies.</p>
-            <p class="text-cool-grey">Viac: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Google Privacy Policy</a></p>
+            <p class="text-cool-grey mb-4">Viac: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-icy-cyan hover:underline">Google Privacy Policy</a></p>
           </div>
 
           <!-- 5. Cookies -->
           <div class="info-section">
             <h2 class="text-3xl md:text-4xl font-heading font-extrabold text-charcoal mb-4 uppercase tracking-tighter">5. Cookies</h2>
-            <p class="text-cool-grey mb-4">Naše stránky môžu používať cookies a podobné technológie na:</p>
-            <ul class="space-y-2 mb-4">
-              <li class="flex items-start gap-3 text-cool-grey"><span class="text-icy-cyan font-bold mt-1 flex-shrink-0">•</span><span>zabezpečenie funkčnosti webu,</span></li>
-              <li class="flex items-start gap-3 text-cool-grey"><span class="text-icy-cyan font-bold mt-1 flex-shrink-0">•</span><span>analytiku,</span></li>
-              <li class="flex items-start gap-3 text-cool-grey"><span class="text-icy-cyan font-bold mt-1 flex-shrink-0">•</span><span>zapamätanie nastavení používateľa,</span></li>
-              <li class="flex items-start gap-3 text-cool-grey"><span class="text-icy-cyan font-bold mt-1 flex-shrink-0">•</span><span>bezpečnosť.</span></li>
-            </ul>
-            <p class="text-cool-grey">Používateľ môže cookies obmedziť alebo zakázať vo svojom prehliadači.</p>
+            <p class="text-cool-grey mb-6">Naše stránky používajú cookies a podobné technológie. Nižšie je zoznam používaných cookies podľa služieb:</p>
+
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-3 uppercase">Google Analytics / Google Ads</h3>
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full text-sm text-cool-grey">
+                <thead><tr class="border-b-2 border-charcoal/20"><th class="text-left py-2 font-bold">Cookie</th><th class="text-left py-2 font-bold">Účel</th><th class="text-left py-2 font-bold">Trvanie</th></tr></thead>
+                <tbody>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">_ga</td><td class="py-2">Rozlišovanie unikátnych návštevníkov</td><td class="py-2">2 roky</td></tr>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">_ga_</td><td class="py-2">Udržiavanie stavu relácie</td><td class="py-2">2 roky</td></tr>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">_gid</td><td class="py-2">Rozlišovanie návštevníkov</td><td class="py-2">24 hodín</td></tr>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">_gat</td><td class="py-2">Obmedzovanie požiadaviek</td><td class="py-2">1 minúta</td></tr>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">_gcl_au</td><td class="py-2">Google Ads konverzie</td><td class="py-2">90 dní</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-3 uppercase">Microsoft Clarity</h3>
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full text-sm text-cool-grey">
+                <thead><tr class="border-b-2 border-charcoal/20"><th class="text-left py-2 font-bold">Cookie</th><th class="text-left py-2 font-bold">Účel</th><th class="text-left py-2 font-bold">Trvanie</th></tr></thead>
+                <tbody>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">_clck</td><td class="py-2">Udržiavanie identifikátora používateľa</td><td class="py-2">1 rok</td></tr>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">_clsk</td><td class="py-2">Spojenie správ do jednej relácie</td><td class="py-2">Relácia</td></tr>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">MUID</td><td class="py-2">Unikátna identifikácia prehliadača</td><td class="py-2">1 rok</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-3 uppercase">New Relic</h3>
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full text-sm text-cool-grey">
+                <thead><tr class="border-b-2 border-charcoal/20"><th class="text-left py-2 font-bold">Mechanizmus</th><th class="text-left py-2 font-bold">Účel</th><th class="text-left py-2 font-bold">Trvanie</th></tr></thead>
+                <tbody>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">sessionStorage</td><td class="py-2">Uchovávanie stavu monitorovania a session replay</td><td class="py-2">Relácia</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="text-2xl font-heading font-extrabold text-charcoal mb-3 uppercase">tawk.to</h3>
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full text-sm text-cool-grey">
+                <thead><tr class="border-b-2 border-charcoal/20"><th class="text-left py-2 font-bold">Cookie</th><th class="text-left py-2 font-bold">Účel</th><th class="text-left py-2 font-bold">Trvanie</th></tr></thead>
+                <tbody>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">__tawkuuid</td><td class="py-2">Identifikácia návštevníka pre live chat</td><td class="py-2">Relácia</td></tr>
+                  <tr class="border-b border-charcoal/10"><td class="py-2 font-mono text-xs">TawkConnectionTime</td><td class="py-2">Sledovanie času pripojenia</td><td class="py-2">Relácia</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="text-cool-grey mt-4">Používateľ môže cookies obmedziť alebo zakázať vo svojom prehliadači. Vypnutie cookies môže ovplyvniť funkčnosť niektorých častí stránky.</p>
           </div>
 
           <!-- 6. Právny základ -->

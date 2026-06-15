@@ -134,7 +134,14 @@
       gtag('config', 'AW-18156080294');
     </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  </head>
+    <!-- New Relic Browser Monitoring -->
+  <script type="text/javascript">
+;window.NREUM||(NREUM={});NREUM.init={browser_consent_mode:{enabled:false},privacy:{cookies_enabled:true},session_replay:{enabled:true,block_selector:"",mask_text_selector:"*",sampling_rate:10.0,error_sampling_rate:100.0,mask_all_inputs:true,collect_fonts:true,inline_images:false,inline_stylesheet:true,fix_stylesheets:true,preload:false,mask_input_options:{}},distributed_tracing:{enabled:true},performance:{capture_measures:true},ajax:{deny_list:["bam.eu01.nr-data.net"],capture_payloads:"none"}};
+;NREUM.loader_config={accountID:"8177575",trustKey:"8177575",agentID:"538865001",licenseKey:"NRJS-ee8553f793c36ddb2b5",applicationID:"538865001"};
+;NREUM.info={beacon:"bam.eu01.nr-data.net",errorBeacon:"bam.eu01.nr-data.net",licenseKey:"NRJS-ee8553f793c36ddb2b5",applicationID:"538865001",sa:1};
+  </script>
+  <script src="https://js-agent.newrelic.com/nr-loader-spa-1.316.0.min.js" async></script>
+</head>
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -187,6 +194,7 @@
           >
           
           <a href="guests" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Attendees</a>
+          <a href="finley" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Finley</a>
           <a href="volunteer" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10"
             >Volunteers</a
           >
@@ -333,7 +341,7 @@
         </div>
       </section>
       <div class="bg-brutal-yellow border-y-4 border-charcoal py-3 overflow-hidden">
-        <div class="animate-marquee flex" style="width: max-content;">
+        <div class="animate-marquee flex" style="width: max-content">
           <div class="flex items-center whitespace-nowrap">
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">📅 August 3, 2026</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
@@ -344,7 +352,9 @@
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">🏆 Competitions</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">🎤 Talks</span>
-      <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
+            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
+          </div>
+          <div class="flex items-center whitespace-nowrap" aria-hidden="true">
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">📅 August 3, 2026</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">📍 Youth Hub, Bratislava</span>
@@ -354,16 +364,7 @@
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">🏆 Competitions</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">🎤 Talks</span>
-              <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">📅 August 3, 2026</span>
             <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">📍 Youth Hub, Bratislava</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">🎨 Artist Alley</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">🏆 Competitions</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">•</span>
-            <span class="text-charcoal font-heading font-black text-lg md:text-xl uppercase tracking-wider px-4">🎤 Talks</span>
           </div>
         </div>
       </div>
@@ -465,6 +466,7 @@
                 >
               </li>
               <li><a href="guests" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Attendees</a></li>
+              <li><a href="finley" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Finley</a></li>
             </ul>
           </div>
           <div>
