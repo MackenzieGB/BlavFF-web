@@ -69,10 +69,48 @@
           <div class="flex items-center gap-3">
             <a href="en/photos" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-sm uppercase tracking-wider px-3 py-1 border-4 border-charcoal brutal-border">EN</a>
             <a href="register" class="btn btn-primary text-sm py-2 px-4">Registrácia</a>
+            <button id="mobile-menu-btn" class="p-2 text-charcoal border-3 border-charcoal" aria-label="Menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
+      <div id="mobile-menu" class="hidden bg-surface border-t-4 border-charcoal">
+        <nav class="flex flex-col p-4 gap-3 max-h-[80vh] overflow-y-auto">
+          <a href="about" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">O akcii</a>
+          <a href="schedule" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Program</a>
+          <a href="guests" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Kto bude</a>
+          <a href="finley" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Finley</a>
+          <a href="competitions" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Súťaže</a>
+          <a href="prednasky" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Prednášky</a>
+          <a href="artist-alley" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Artist Alley</a>
+          <a href="venue" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Miesto</a>
+          <a href="volunteer" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Pomocníci</a>
+          <a href="partners" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Partneri</a>
+          <a href="news" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Novinky</a>
+          <a href="photos" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Fotky</a>
+          <a href="contact" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Kontakt</a>
+          <a href="https://furosion.org" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Daruj</a>
+          <a href="press-kit" class="text-charcoal hover:text-icy-cyan transition-colors font-bold text-lg uppercase tracking-wider py-2 border-b-2 border-charcoal/10">Press Kit</a>
+          <a href="register" class="btn btn-primary mt-3 text-center">Registrácia</a>
+        </nav>
+      </div>
     </header>
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      }
+    </script>
 
     <main class="pt-28 pb-16">
       <section class="section">
@@ -80,22 +118,8 @@
           <h1 class="text-6xl md:text-8xl font-heading font-extrabold text-charcoal mb-4 uppercase tracking-tighter">Fotogaléria</h1>
           <p class="text-xl md:text-2xl text-cool-grey mb-8 font-bold uppercase tracking-wider">Oficiálne zábery z ročníka 2026</p>
 
-          <div class="card bg-icy-cyan/10 border-4 border-charcoal p-6 mb-12 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-4">
-              <div class="w-16 h-16 rounded-full bg-charcoal text-surface flex items-center justify-center text-3xl font-extrabold">📷</div>
-              <div>
-                <h2 class="text-2xl font-heading font-extrabold text-charcoal uppercase">Fotograf festivalu: Lumy Fox</h2>
-                <p class="text-cool-grey text-sm md:text-base">Všetky fotografie s láskou nafotil <a href="https://www.instagram.com/lumy_fox_/" target="_blank" rel="noopener" class="text-charcoal font-bold underline hover:text-icy-cyan">@lumy_fox_</a>. Ďakujeme za úžasné zábery!</p>
-              </div>
-            </div>
-            <a href="https://www.instagram.com/lumy_fox_/" target="_blank" rel="noopener" class="btn btn-primary whitespace-nowrap">
-              <i class="fa-brands fa-instagram mr-2"></i> Sledovať Lumy Fox
-            </a>
-          </div>
-
           <div class="flex flex-wrap gap-4 mb-8">
             <a href="photos" class="btn btn-primary text-lg px-6 py-2">BlavFF 2026</a>
-            <span class="btn bg-charcoal/20 text-charcoal/60 cursor-not-allowed text-lg px-6 py-2 border-2 border-charcoal/30">Minulé ročníky (Pripravujeme)</span>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -2633,9 +2657,103 @@
     </main>
 
     <footer class="bg-charcoal text-surface border-t-4 border-icy-cyan">
-      <div class="container mx-auto px-4 py-12">
-        <div class="text-center">
-          <p class="text-cool-grey text-xs">© 2026 BlavFF | Furosion o.z. Všetky práva vyhradené. | Photos by Lumy Fox</p>
+      <div class="container mx-auto px-4 py-12 md:py-16">
+        <!-- Giant BLAVFF text -->
+        <div class="mb-8 pb-6 border-b-4 border-icy-cyan/30">
+          <p class="giant-text text-surface/15 select-none">BLAVFF</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <!-- Brand -->
+          <div class="sm:col-span-2 lg:col-span-1">
+            <div class="flex items-center gap-3 mb-4">
+              <img src="logonobg.svg" alt="BlavFF Logo" class="h-12 w-auto" />
+            </div>
+            <p class="text-cool-grey-light text-sm leading-relaxed mb-2">
+              Mini festival pre furry a cosplay komunity/subkultúry.
+            </p>
+            <p class="text-cool-grey text-sm font-bold">10. 8. 2026 • Youth Hub, Bratislava</p>
+          </div>
+          <!-- Quick links -->
+          <div>
+            <h3 class="font-heading font-extrabold mb-4 text-icy-cyan text-sm uppercase tracking-widest">Navigácia</h3>
+            <ul class="space-y-3 text-sm">
+              <li><a href="about" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">O akcii</a></li>
+              <li><a href="schedule" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Program</a></li>
+              <li><a href="guests" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Kto bude</a></li>
+              <li><a href="finley" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Finley</a></li>
+              <li><a href="competitions" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Súťaže</a></li>
+              <li><a href="prednasky" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Prednášky</a></li>
+              <li><a href="artist-alley" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Artist Alley</a></li>
+              <li><a href="venue" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Miesto</a></li>
+              <li><a href="photos" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Fotky</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-heading font-extrabold mb-4 text-icy-cyan text-sm uppercase tracking-widest">Zapoj sa</h3>
+            <ul class="space-y-3 text-sm">
+              <li><a href="register" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Registrácia</a></li>
+              <li><a href="volunteer" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Pomocníci</a></li>
+              <li><a href="partners" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Partneri</a></li>
+              <li><a href="news" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Novinky</a></li>
+              <li><a href="contact" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Kontakt</a></li>
+              <li><a href="press-kit" class="text-surface hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Press Kit</a></li>
+            </ul>
+          </div>
+          <!-- Social -->
+          <div>
+            <h3 class="font-heading font-extrabold mb-4 text-icy-cyan text-sm uppercase tracking-widest">Sleduj nás</h3>
+            <ul class="space-y-3 text-sm">
+              <li>
+                <a href="https://www.instagram.com/blavff.sk" target="_blank" rel="noopener" class="text-surface hover:text-icy-cyan transition-colors flex items-center gap-2 font-bold uppercase tracking-wider">
+                  <i class="fa-brands fa-instagram text-lg"></i>
+                  @blavff.sk
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@blavff" target="_blank" rel="noopener" class="text-surface hover:text-icy-cyan transition-colors flex items-center gap-2 font-bold uppercase tracking-wider">
+                  <i class="fa-brands fa-tiktok text-lg"></i>
+                  @blavff
+                </a>
+              </li>
+              <li>
+                <a href="https://whatsapp.com/channel/0029Vb7S2UhGzzKKmLhHMt3f" target="_blank" rel="noopener" class="text-surface hover:text-icy-cyan transition-colors flex items-center gap-2 font-bold uppercase tracking-wider">
+                  <i class="fa-brands fa-whatsapp text-lg"></i>
+                  WhatsApp
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div>
+            <h3 class="font-heading font-extrabold mb-4 text-icy-cyan text-sm uppercase tracking-widest">Kontakt</h3>
+            <p class="text-cool-grey-light text-sm leading-relaxed mb-2">
+              Máš otázky alebo potrebuješ pomoc? Napíš nám.
+            </p>
+            <a href="mailto:blavff@furosion.org" class="text-icy-cyan hover:text-white transition-colors text-sm font-bold uppercase tracking-wider">
+              blavff@furosion.org
+            </a>
+          </div>
+        </div>
+        <!-- Legal links -->
+        <div class="border-t-4 border-charcoal-light pt-6 flex flex-wrap justify-center gap-6 text-sm">
+          <a href="privacy" class="text-cool-grey-light hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Ochrana údajov</a>
+          <a href="tos" class="text-cool-grey-light hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Podmienky účasti</a>
+          <a href="rules" class="text-cool-grey-light hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Pravidlá</a>
+          <a href="anti-harassment" class="text-cool-grey-light hover:text-icy-cyan transition-colors font-bold uppercase tracking-wider">Zásady proti obťažovaniu</a>
+        </div>
+      </div>
+    <div class="text-center py-8 border-t-4 border-charcoal-light">
+      <a href="https://furosion.org" class="block hover:opacity-80 transition-opacity">
+        <img src="https://furosion.org/furosionozsquare.png" alt="Furosion logo" class="w-20 h-20 mx-auto mb-4" style="animation: float 3s ease-in-out infinite">
+      </a>
+      <a href="https://furosion.org" class="block text-cool-grey-light hover:text-icy-cyan transition-colors text-xs font-bold uppercase tracking-wider">
+        <span style="animation: fade 2s ease-in-out infinite alternate">A Furosion organisational project</span>
+      </a>
+    </div>
+      <!-- Copyright bar -->
+      <div class="bg-charcoal-light/20 py-3">
+        <div class="container mx-auto px-4 text-center text-cool-grey text-xs">
+          © 2026 BlavFF | Furosion o.z. Všetky práva vyhradené. | IČO: 57528900 | Fotografie: Lumy Fox
         </div>
       </div>
     </footer>
