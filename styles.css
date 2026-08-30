@@ -1905,3 +1905,6 @@ details.card > div p {
   }
 }
 
+/* Silktide Consent Manager – hide floating icon */
+#stcm-icon{display:none!important}
+

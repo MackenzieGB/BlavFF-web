@@ -16,6 +16,18 @@
     <meta name="theme-color" content="#1a1a2e" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("consent","default",{
+        analytics_storage: localStorage.getItem("stcm.consent.analytics")==="true"?"granted":"denied",
+        ad_storage: localStorage.getItem("stcm.consent.marketing")==="true"?"granted":"denied",
+        ad_user_data: localStorage.getItem("stcm.consent.marketing")==="true"?"granted":"denied",
+        ad_personalization: localStorage.getItem("stcm.consent.marketing")==="true"?"granted":"denied",
+        functionality_storage: localStorage.getItem("stcm.consent.essential")==="true"?"granted":"denied",
+        security_storage: localStorage.getItem("stcm.consent.essential")==="true"?"granted":"denied"
+      });
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
       rel="stylesheet"
@@ -75,24 +87,65 @@
   }
 }
     </script>
-      <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18156080294"></script>
-    <script>
+          <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'AW-18156080294');
     </script>
-    <!-- New Relic Browser Monitoring -->
-  <script type="text/javascript">
-;window.NREUM||(NREUM={});NREUM.init={browser_consent_mode:{enabled:false},privacy:{cookies_enabled:true},session_replay:{enabled:true,block_selector:"",mask_text_selector:"*",sampling_rate:10.0,error_sampling_rate:100.0,mask_all_inputs:true,collect_fonts:true,inline_images:false,inline_stylesheet:true,fix_stylesheets:true,preload:false,mask_input_options:{}},distributed_tracing:{enabled:true},performance:{capture_measures:true},ajax:{deny_list:["bam.eu01.nr-data.net"],capture_payloads:"none"}};
-;NREUM.loader_config={accountID:"8177575",trustKey:"8177575",agentID:"538865001",licenseKey:"NRJS-ee8553f793c36ddb2b5",applicationID:"538865001"};
-;NREUM.info={beacon:"bam.eu01.nr-data.net",errorBeacon:"bam.eu01.nr-data.net",licenseKey:"NRJS-ee8553f793c36ddb2b5",applicationID:"538865001",sa:1};
-  </script>
-  <script src="https://js-agent.newrelic.com/nr-loader-spa-1.316.0.min.js" async></script>
+        <script src="https://cdn.jsdelivr.net/gh/silktide/consent-manager@v2.0.1/silktide-consent-manager.js"
+      integrity="sha384-5Pt34uiIbCsvfiiZXoLi4HRf/YBXjr9c8e+gYeVo9smUaInNHYVtc8NZ8wUnXJIq"
+      crossorigin="anonymous"></script>
+    <style>
+      #stcm-wrapper{--primaryColor:#4A90D9;--backgroundColor:#1A1A1A;--textColor:#F5F5F5;--fontFamily:'Inter',sans-serif}
+      #stcm-icon{display:none!important}
+    </style>
+    <script>
+    (function(){
+      function loadGTM(id){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer",id);}
+      function loadGtag(id){var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id="+id;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag("js",new Date());gtag("config",id);}
+      function loadClarity(id){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",id);}
+      function loadNewRelic(){var c=document.createElement("script");c.type="text/javascript";c.textContent=";window.NREUM||(NREUM={});NREUM.init={browser_consent_mode:{enabled:false},privacy:{cookies_enabled:true},session_replay:{enabled:true,block_selector:\"\",mask_text:\"*\",sampling_rate:10,error_sampling_rate:100,mask_all_inputs:true,collect_fonts:true,inline_images:false,inline_stylesheet:true,fix_stylesheets:true},distributed_tracing:{enabled:true},performance:{capture_measures:true},ajax:{deny_list:[\"bam.eu01.nr-data.net\"],capture_payloads:\"none\"}};NREUM.loader_config={accountID:\"8177575\",trustKey:\"8177575\",agentID:\"538865001\",licenseKey:\"NRJS-ee8553f793c36ddb2b5\",applicationID:\"538865001\"};NREUM.info={beacon:\"bam.eu01.nr-data.net\",errorBeacon:\"bam.eu01.nr-data.net\",licenseKey:\"NRJS-ee8553f793c36ddb2b5\",applicationID:\"538865001\",sa:1};";document.head.appendChild(c);var s=document.createElement("script");s.async=true;s.src="https://js-agent.newrelic.com/nr-loader-spa-1.316.0.min.js";document.head.appendChild(s);}
+      var _loaded=false;
+      function loadAll(){if(_loaded)return;_loaded=true;loadGTM("GTM-5KX3NX44");loadGtag("AW-18156080294");loadClarity("wr2a5xebeo");loadNewRelic();}
+      window.addEventListener("stcm_consent_update",function(e){var d=e.detail||{};if(d.analytics||d.marketing)loadAll();});
+      document.addEventListener("DOMContentLoaded",function(){try{if(localStorage.getItem("stcm.consent.analytics")==="true"||localStorage.getItem("stcm.consent.marketing")==="true")loadAll();}catch(e){}});
+      window.silktideConsentManager.init({
+        prompt:{position:"bottomCenter"},
+        icon:{position:"bottomLeft"},
+        backdrop:{show:false},
+        text:{
+          prompt:{
+            description:"<p>We use cookies for analytics and marketing. You can accept or reject them.</p>",
+            acceptAllButtonText:"Accept all",
+            acceptAllButtonAccessibleLabel:"Accept all cookies",
+            rejectNonEssentialButtonText:"Reject non-essential",
+            rejectNonEssentialButtonAccessibleLabel:"Reject non-essential cookies",
+            preferencesButtonText:"Preferences",
+            preferencesButtonAccessibleLabel:"Cookie preferences"
+          },
+          preferences:{
+            title:"Cookie preferences",
+            description:"<p>Choose which cookies you want to allow. Your settings will be saved for future visits.</p>",
+            saveButtonText:"Save",
+            saveButtonAccessibleLabel:"Save cookie preferences",
+            creditLinkText:"",
+            creditLinkAccessibleLabel:""
+          }
+        },
+        consentTypes:[
+          {id:"analytics",label:"Analytics",description:"<p>Help us understand how visitors use the website.</p>",defaultValue:false,gtag:"analytics_storage"},
+          {id:"marketing",label:"Marketing",description:"<p>Used for personalized advertising and campaign measurement.</p>",defaultValue:false,gtag:["ad_storage","ad_user_data","ad_personalization"]},
+          {id:"essential",label:"Essential",description:"<p>Required for the website to function. Cannot be disabled.</p>",required:true}
+        ]
+      });
+    })();
+    </script>
 </head>
   <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KX3NX44"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="announcement-banner" style="background:#ff6b35;color:#fff;text-align:center;padding:12px 48px 12px 16px;font-size:14px;font-weight:700;line-height:1.5;position:relative;z-index:10000;border-bottom:4px solid #1a1a2e"><strong>IMPORTANT:</strong> Due to extreme heat, Bratislava FurFest is moved from Aug 3 to <strong>Monday, Aug 10, 2026</strong>. <a href="/en/news" style="color:#fff;text-decoration:underline;font-weight:800">More info</a> in your email. <button onclick="this.parentElement.style.display='none';sessionStorage.setItem('annBanner','1');var h=document.querySelector('header');if(h)h.style.top='0'" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:22px;cursor:pointer;line-height:1;padding:4px 8px;font-weight:700">✕</button></div>
 <script>document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('announcement-banner');var h=document.querySelector('header');if(sessionStorage.getItem('annBanner')){if(b)b.style.display='none';if(h)h.style.top='0'}else{if(h)h.style.top='48px'}})</script>
     <noscript
